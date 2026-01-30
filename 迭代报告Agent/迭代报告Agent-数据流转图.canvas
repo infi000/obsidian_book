@@ -1,0 +1,33 @@
+{
+	"nodes":[
+		{"id":"data_001_title","type":"text","x":300,"y":-50,"width":700,"height":80,"text":"# 迭代报告Agent - 数据结构与流转","color":"5"},
+		{"id":"data_002_input","type":"group","x":100,"y":100,"width":280,"height":200,"label":"输入","color":"2"},
+		{"id":"data_003_input_detail","type":"text","x":120,"y":140,"width":240,"height":140,"text":"**环境变量**\n• VCS_TYPE\n• VCS_BASE_URL\n• GITLAB_PROJECT_ID\n• GITLAB_TOKEN\n• RELEASE_BRANCH\n• BASE_BRANCH"},
+		{"id":"data_004_vcs_config","type":"text","x":100,"y":350,"width":280,"height":120,"text":"```typescript\ninterface VCSConfig {\n  type: 'gitlab'|'bitbucket'\n  baseUrl: string\n  token: string\n  projectId?: string\n}\n```","color":"6"},
+		{"id":"data_005_merged_pr","type":"text","x":450,"y":100,"width":280,"height":220,"text":"```typescript\ninterface MergedPR {\n  id: number|string\n  title: string\n  author: string\n  sourceBranch: string\n  targetBranch: string\n  mergedAt: string\n  webUrl: string\n  description: string\n}\n```","color":"6"},
+		{"id":"data_006_file_stat","type":"text","x":800,"y":100,"width":280,"height":180,"text":"```typescript\ninterface FileStat {\n  files: number\n  additions: number\n  deletions: number\n  commits: number\n}\n```\n\n示例:\n{files: 45, additions: 2340, deletions: 1200, commits: 5}","color":"6"},
+		{"id":"data_007_process1","type":"group","x":450,"y":400,"width":280,"height":150,"label":"处理步骤1：获取PR列表","color":"3"},
+		{"id":"data_008_process1_detail","type":"text","x":470,"y":430,"width":240,"height":100,"text":"getMergedPRs(branch)\n  ↓\nAPI调用\n  ↓\n返回 MergedPR[]"},
+		{"id":"data_009_process2","type":"group","x":450,"y":600,"width":280,"height":150,"label":"处理步骤2：统计文件改动","color":"3"},
+		{"id":"data_010_process2_detail","type":"text","x":470,"y":630,"width":240,"height":100,"text":"for each PR:\n  getFileStat(base, head)\n    ↓\n  累加统计\n    ↓\n  FileStat[]"},
+		{"id":"data_011_release_report","type":"text","x":800,"y":550,"width":280,"height":200,"text":"```typescript\ninterface ReleaseReport {\n  version: string\n  releaseBranch: string\n  generatedAt: string\n  totalPRs: number\n  totalFiles: number\n  totalAdditions: number\n  totalDeletions: number\n  prs: PR[]\n}\n```","color":"6"},
+		{"id":"data_012_process3","type":"group","x":100,"y":550,"width":280,"height":150,"label":"处理步骤3：生成报告","color":"3"},
+		{"id":"data_013_process3_detail","type":"text","x":120,"y":580,"width":240,"height":100,"text":"generateMarkdown()\n  ↓\n格式化数据\n  ↓\nMarkdown字符串"},
+		{"id":"data_014_output","type":"group","x":300,"y":800,"width":700,"height":180,"label":"输出","color":"4"},
+		{"id":"data_015_output_detail","type":"text","x":320,"y":840,"width":660,"height":110,"text":"**Markdown 报告文件**\n\n./release-reports/v1.2.3_2024-01-10.md\n\n包含: 版本号 | 统计表 | PR详情 | 检查清单"},
+		{"id":"data_016_example","type":"text","x":100,"y":1050,"width":900,"height":250,"text":"### 完整数据流示例\n\n**输入:** VCS_TYPE=gitlab, RELEASE_BRANCH=release/main\n  ↓\n**步骤1:** GitLabAdapter.getMergedPRs('release/main')\n  返回: [PR#1, PR#2, PR#3, PR#4, PR#5]\n  ↓\n**步骤2:** for each PR: getFileStat('main', pr.sourceBranch)\n  PR#1: {files: 10, additions: 500, deletions: 200}\n  PR#2: {files: 8, additions: 400, deletions: 150}\n  ...\n  总计: {files: 45, additions: 2340, deletions: 1200}\n  ↓\n**步骤3:** generateMarkdown() + saveReport()\n  ↓\n**输出:** ./release-reports/v1.2.3_2024-01-10.md ✅","color":"2"}
+	],
+	"edges":[
+		{"id":"data_edge_001","fromNode":"data_001_title","fromSide":"bottom","toNode":"data_002_input","toSide":"top","toEnd":"arrow"},
+		{"id":"data_edge_002","fromNode":"data_003_input_detail","fromSide":"bottom","toNode":"data_004_vcs_config","toSide":"top","toEnd":"arrow","label":"转换"},
+		{"id":"data_edge_003","fromNode":"data_004_vcs_config","fromSide":"right","toNode":"data_007_process1","toSide":"bottom","toEnd":"arrow"},
+		{"id":"data_edge_004","fromNode":"data_007_process1","fromSide":"top","toNode":"data_005_merged_pr","toSide":"bottom","toEnd":"arrow","label":"返回"},
+		{"id":"data_edge_005","fromNode":"data_007_process1","fromSide":"bottom","toNode":"data_009_process2","toSide":"top","toEnd":"arrow"},
+		{"id":"data_edge_006","fromNode":"data_009_process2","fromSide":"top","toNode":"data_006_file_stat","toSide":"bottom","toEnd":"arrow","label":"遍历计算"},
+		{"id":"data_edge_007","fromNode":"data_005_merged_pr","fromSide":"bottom","toNode":"data_007_process1","toSide":"top","toEnd":"arrow"},
+		{"id":"data_edge_008","fromNode":"data_006_file_stat","fromSide":"bottom","toNode":"data_011_release_report","toSide":"top","toEnd":"arrow","label":"聚合"},
+		{"id":"data_edge_009","fromNode":"data_011_release_report","fromSide":"left","toNode":"data_012_process3","toSide":"right","toEnd":"arrow"},
+		{"id":"data_edge_010","fromNode":"data_012_process3","fromSide":"bottom","toNode":"data_014_output","toSide":"top","toEnd":"arrow"},
+		{"id":"data_edge_011","fromNode":"data_014_output","fromSide":"bottom","toNode":"data_016_example","toSide":"top","toEnd":"arrow","label":"实际示例"}
+	]
+}

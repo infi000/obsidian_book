@@ -1,0 +1,113 @@
+{
+  "userName": "zcy",
+  "enableBlocklist": true,
+  "blockedCommands": {
+    "unix": [
+      "rm -rf",
+      "chmod 777",
+      "chmod -R 777"
+    ],
+    "windows": [
+      "del /s /q",
+      "rd /s /q",
+      "rmdir /s /q",
+      "format",
+      "diskpart",
+      "Remove-Item -Recurse -Force",
+      "Remove-Item -Force -Recurse",
+      "Remove-Item -r -fo",
+      "Remove-Item -fo -r",
+      "Remove-Item -Recurse",
+      "Remove-Item -r",
+      "ri -Recurse",
+      "ri -r",
+      "ri -Force",
+      "ri -fo",
+      "rm -r -fo",
+      "rm -Recurse",
+      "rm -Force",
+      "del -Recurse",
+      "del -Force",
+      "erase -Recurse",
+      "erase -Force",
+      "rd -Recurse",
+      "rmdir -Recurse",
+      "Format-Volume",
+      "Clear-Disk",
+      "Initialize-Disk",
+      "Remove-Partition"
+    ]
+  },
+  "model": "claude/claude-haiku-4-5",
+  "enableAutoTitleGeneration": true,
+  "titleGenerationModel": "",
+  "thinkingBudget": "off",
+  "permissionMode": "yolo",
+  "lastNonPlanPermissionMode": "yolo",
+  "permissions": [
+    {
+      "toolName": "Edit",
+      "pattern": "Excalidraw/Drawing 2026-01-20 09.52.25.excalidraw.md",
+      "approvedAt": 1768874811150,
+      "scope": "always"
+    },
+    {
+      "toolName": "Write",
+      "pattern": "Excalidraw/KAPP接入文档.excalidraw.md",
+      "approvedAt": 1768875436642,
+      "scope": "always"
+    },
+    {
+      "toolName": "Edit",
+      "pattern": "Excalidraw/KAPP接入文档.excalidraw.md",
+      "approvedAt": 1768875655707,
+      "scope": "always"
+    },
+    {
+      "toolName": "Write",
+      "pattern": "/Users/01389450/Documents/Obsidian Vault/Excalidraw/CLI-commands-diagram.excalidraw.md",
+      "approvedAt": 1768875967730,
+      "scope": "always"
+    },
+    {
+      "toolName": "Write",
+      "pattern": "/Users/01389450/Documents/Obsidian Vault/技术学习文档/gemini-cli/CLI_commands_structure.json",
+      "approvedAt": 1768876186568,
+      "scope": "always"
+    },
+    {
+      "toolName": "Write",
+      "pattern": "/Users/01389450/Documents/Obsidian Vault/技术学习文档/gemini-cli/CLI命令完全参考.md",
+      "approvedAt": 1768882065053,
+      "scope": "always"
+    },
+    {
+      "toolName": "Write",
+      "pattern": "/Users/01389450/Documents/Obsidian Vault/Excalidraw/CLI-commands-complete.excalidraw.md",
+      "approvedAt": 1768888743171,
+      "scope": "always"
+    },
+    {
+      "toolName": "Write",
+      "pattern": "/Users/01389450/Documents/Obsidian Vault/Excalidraw/CLI-commands-relationship.excalidraw.md",
+      "approvedAt": 1768893422457,
+      "scope": "always"
+    }
+  ],
+  "excludedTags": [],
+  "mediaFolder": "",
+  "environmentVariables": "ANTHROPIC_AUTH_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NLZXkiOiJhcGkyX2I4NDZhZDE3LTJkOTctNGM4OS04NzRmLTQ3ODU3ZjJhYWMwZiIsImVudiI6InByZCIsImp0aSI6MjUwMzYsInByb2plY3RfaWQiOjE0MTA3LCJzeXN0ZW1LZXkiOiIzZmE1MThlOC0wZTViLWY2M2EtZWMyZS0yMWIyZGI5OTVjZjMifQ.SURlfMIC3Im-m21V7KiHSTFCIkwlwgzCdjoQD_14xqo\nANTHROPIC_BASE_URL=http://llm-model-hub-apis.sf-express.com\nANTHROPIC_API_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NLZXkiOiJhcGkyX2I4NDZhZDE3LTJkOTctNGM4OS04NzRmLTQ3ODU3ZjJhYWMwZiIsImVudiI6InByZCIsImp0aSI6MjUwMzYsInByb2plY3RfaWQiOjE0MTA3LCJzeXN0ZW1LZXkiOiIzZmE1MThlOC0wZTViLWY2M2EtZWMyZS0yMWIyZGI5OTVjZjMifQ.SURlfMIC3Im-m21V7KiHSTFCIkwlwgzCdjoQD_14xqo\nANTHROPIC_MODEL=claude/claude-haiku-4-5",
+  "envSnippets": [],
+  "systemPrompt": "",
+  "allowedExportPaths": [
+    "~/Desktop",
+    "~/Downloads"
+  ],
+  "keyboardNavigation": {
+    "scrollUpKey": "w",
+    "scrollDownKey": "s",
+    "focusInputKey": "i"
+  },
+  "claudeCliPath": "",
+  "loadUserClaudeSettings": true
+}

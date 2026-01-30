@@ -1,0 +1,24 @@
+{
+	"nodes":[
+		{"id":"node_001_architecture_title","type":"text","x":400,"y":-100,"width":500,"height":80,"text":"# 迭代报告Agent - 系统架构图","color":"5"},
+		{"id":"node_002_cli_layer","type":"group","x":200,"y":100,"width":900,"height":150,"label":"CLI 接口层 (cli.ts)","color":"1"},
+		{"id":"node_003_cli_detail","type":"text","x":230,"y":130,"width":840,"height":100,"text":"• 环境变量加载 (dotenv)\n• 参数验证与检查\n• VCS类型判断 (gitlab/bitbucket)\n• Agent初始化与调用\n• 错误处理与输出"},
+		{"id":"node_004_agent_layer","type":"group","x":200,"y":300,"width":900,"height":200,"label":"业务逻辑层 - ReleaseReportAgent (agents/)","color":"5"},
+		{"id":"node_005_agent_methods","type":"text","x":230,"y":330,"width":840,"height":150,"text":"registerAdapter()\n  ↓\ngenerateSingleVCS() / generateCombinedReport()\n  • 获取合并的PR/MR\n  • 统计每个PR的改动\n  • 聚合数据（总统计）n  ↓\ngenerateMarkdown()\n  ↓\nsaveReport()"},
+		{"id":"node_006_vcs_adapter_layer","type":"group","x":200,"y":550,"width":900,"height":200,"label":"VCS适配器层 (adapters/vcs-adapter.ts)","color":"4"},
+		{"id":"node_007_vcs_detail","type":"text","x":230,"y":580,"width":840,"height":150,"text":"VCSAdapter (抽象基类)\n  ├─ GitLabAdapter\n  │   ├─ getMergedPRs() → 调用 /api/v4/merge_requests\n  │   └─ getFileStat() → 调用 /api/v4/repository/compare\n  ├─ BitbucketAdapter\n  │   ├─ getMergedPRs() → 调用 /2.0/pullrequests\n  │   └─ getFileStat() → 调用 /2.0/diffstat\n  └─ VCSFactory → 自动选择正确的实现"},
+		{"id":"node_008_external_gitlab","type":"text","x":100,"y":820,"width":200,"height":100,"text":"## GitLab\n\n- API v4\n- MR/Commit/Diff","color":"2"},
+		{"id":"node_009_external_bitbucket","type":"text","x":500,"y":820,"width":200,"height":100,"text":"## Bitbucket\n\n- API 2.0\n- PR/Commit/Diffstat","color":"2"},
+		{"id":"node_010_output","type":"text","x":900,"y":820,"width":200,"height":100,"text":"## 输出\n\n./release-reports/\n  v*.md","color":"3"},
+		{"id":"node_011_data_flow","type":"text","x":400,"y":1000,"width":500,"height":150,"text":"### 核心数据流\n\n**MergedPR** (id, title, author, branch)\n  ↓\n**FileStat** (files, additions, deletions)\n  ↓\n**ReleaseReport** (聚合数据)\n  ↓\n**Markdown** (最终报告)","color":"6"}
+	],
+	"edges":[
+		{"id":"edge_001_title_to_cli","fromNode":"node_001_architecture_title","fromSide":"bottom","toNode":"node_002_cli_layer","toSide":"top","toEnd":"arrow"},
+		{"id":"edge_002_cli_to_agent","fromNode":"node_003_cli_detail","fromSide":"bottom","toNode":"node_004_agent_layer","toSide":"top","toEnd":"arrow","label":"初始化"},
+		{"id":"edge_003_agent_to_vcs","fromNode":"node_005_agent_methods","fromSide":"bottom","toNode":"node_006_vcs_adapter_layer","toSide":"top","toEnd":"arrow","label":"调用"},
+		{"id":"edge_004_gitlab_adapter","fromNode":"node_007_vcs_detail","fromSide":"bottom","toNode":"node_008_external_gitlab","toSide":"top","toEnd":"arrow","label":"API调用"},
+		{"id":"edge_005_bitbucket_adapter","fromNode":"node_007_vcs_detail","fromSide":"bottom","toNode":"node_009_external_bitbucket","toSide":"top","toEnd":"arrow","label":"API调用"},
+		{"id":"edge_006_output","fromNode":"node_007_vcs_detail","fromSide":"bottom","toNode":"node_010_output","toSide":"top","toEnd":"arrow","label":"报告"},
+		{"id":"edge_007_data_flow","fromNode":"node_010_output","fromSide":"bottom","toNode":"node_011_data_flow","toSide":"top","toEnd":"arrow"}
+	]
+}

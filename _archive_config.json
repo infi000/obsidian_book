@@ -1,0 +1,64 @@
+{
+  "version": "1.0",
+  "description": "Daily Archive Consolidation Config",
+  "enabled": true,
+
+  "sources": [
+    {
+      "path": "会议记录.md",
+      "category": "📌 会议记录",
+      "enabled": true,
+      "priority": 1
+    },
+    {
+      "path": "临时笔记.md",
+      "category": "📝 临时笔记",
+      "enabled": true,
+      "priority": 2
+    },
+    {
+      "path": "cr记录.md",
+      "category": "🔍 CR 记录",
+      "enabled": true,
+      "priority": 3
+    }
+  ],
+
+  "output": {
+    "path": "每日归档总结.md",
+    "format": "markdown",
+    "preserveLinks": true,
+    "addTimestamp": true
+  },
+
+  "archiveRules": {
+    "dateFormat": "YYYY-MM-DD",
+    "groupByDate": true,
+    "keepHistory": true,
+    "maxDaysInActive": 30,
+    "archiveOlderThan": 90
+  },
+
+  "extraction": {
+    "method": "heading-based",
+    "minContentLength": 10,
+    "skipEmptyLines": true,
+    "preserveFormatting": true
+  },
+
+  "frontmatter": {
+    "trackLastUpdated": true,
+    "addMetadata": {
+      "source": true,
+      "date": true,
+      "category": true
+    }
+  },
+
+  "schedule": {
+    "autoRun": false,
+    "triggerMethod": "manual",
+    "allowManualTrigger": true,
+    "command": "/archive-daily"
+  }
+}

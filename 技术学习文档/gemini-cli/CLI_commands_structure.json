@@ -1,0 +1,391 @@
+{
+  "title": "Gemini CLI 命令完全参考",
+  "version": "1.0",
+  "lastUpdated": "2026-01-20",
+  "categories": [
+    {
+      "id": "slash_commands",
+      "name": "斜杠命令（/）",
+      "prefix": "/",
+      "description": "提供对 CLI 本身的元级别控制",
+      "commands": [
+        {
+          "name": "bug",
+          "description": "为 Gemini CLI 提交问题",
+          "usage": "/bug <issue_title>",
+          "config": ".gemini/settings.json - advanced.bugCommand"
+        },
+        {
+          "name": "chat",
+          "description": "保存并恢复对话历史记录",
+          "subcommands": [
+            {
+              "name": "save",
+              "usage": "/chat save <tag>",
+              "description": "保存当前对话历史记录"
+            },
+            {
+              "name": "resume",
+              "usage": "/chat resume <tag>",
+              "description": "从先前保存的对话恢复"
+            },
+            {
+              "name": "list",
+              "usage": "/chat list",
+              "description": "列出可用的标签以便恢复聊天状态"
+            },
+            {
+              "name": "delete",
+              "usage": "/chat delete <tag>",
+              "description": "删除已保存的对话检查点"
+            },
+            {
+              "name": "share",
+              "usage": "/chat share file.md 或 /chat share file.json",
+              "description": "将当前对话写入提供的 Markdown 或 JSON 文件"
+            }
+          ],
+          "checkpoint_locations": {
+            "linux_macos": "~/.gemini/tmp/<project_hash>/",
+            "windows": "C:\\Users\\<YourUsername>\\.gemini\\tmp\\<project_hash>\\"
+          }
+        },
+        {
+          "name": "clear",
+          "description": "清除终端屏幕，包括可见的会话历史记录",
+          "keyboard_shortcut": "Ctrl+L"
+        },
+        {
+          "name": "compress",
+          "description": "用摘要替换整个聊天上下文，节省令牌"
+        },
+        {
+          "name": "copy",
+          "description": "将 Gemini CLI 生成的最后一个输出复制到剪贴板",
+          "requirements": {
+            "linux": "xclip 或 xsel",
+            "macos": "pbcopy",
+            "windows": "clip"
+          }
+        },
+        {
+          "name": "directory",
+          "aliases": ["/dir"],
+          "description": "管理工作区目录以支持多目录",
+          "subcommands": [
+            {
+              "name": "add",
+              "usage": "/directory add <path1>,<path2>",
+              "description": "将目录添加到工作区"
+            },
+            {
+              "name": "show",
+              "usage": "/directory show",
+              "description": "显示所有添加的目录"
+            }
+          ]
+        },
+        {
+          "name": "editor",
+          "description": "打开用于选择支持的编辑器的对话框"
+        },
+        {
+          "name": "extensions",
+          "description": "列出当前 Gemini CLI 会话中的所有活动扩展"
+        },
+        {
+          "name": "help",
+          "aliases": ["/?"],
+          "description": "显示有关 Gemini CLI 的帮助信息"
+        },
+        {
+          "name": "mcp",
+          "description": "管理已配置的模型上下文协议 (MCP) 服务器",
+          "subcommands": [
+            {
+              "name": "list",
+              "aliases": ["ls"],
+              "description": "列出已配置的 MCP 服务器和工具"
+            },
+            {
+              "name": "desc",
+              "description": "列出已配置的 MCP 服务器和工具及其描述"
+            },
+            {
+              "name": "schema",
+              "description": "列出已配置的 MCP 服务器和工具，包括描述和架构"
+            },
+            {
+              "name": "auth",
+              "usage": "/mcp auth <server-name>",
+              "description": "使用启用 OAuth 的 MCP 服务器进行身份验证"
+            },
+            {
+              "name": "refresh",
+              "description": "重启所有 MCP 服务器并重新发现其可用工具"
+            }
+          ]
+        },
+        {
+          "name": "model",
+          "description": "打开对话框以选择您的 Gemini 模型"
+        },
+        {
+          "name": "memory",
+          "description": "管理 AI 的指令上下文（从 GEMINI.md 文件加载的分层内存）",
+          "subcommands": [
+            {
+              "name": "add",
+              "usage": "/memory add <text to remember>",
+              "description": "将以下文本添加到 AI 的内存中"
+            },
+            {
+              "name": "show",
+              "description": "显示从所有 GEMINI.md 文件加载的当前分层内存的完整连接内容"
+            },
+            {
+              "name": "refresh",
+              "description": "从所有位置找到的 GEMINI.md 文件重新加载分层指令内存"
+            },
+            {
+              "name": "list",
+              "description": "列出用于分层内存的 GEMINI.md 文件的路径"
+            }
+          ]
+        },
+        {
+          "name": "restore",
+          "usage": "/restore [tool_call_id]",
+          "description": "将项目文件恢复到执行工具之前的状态"
+        },
+        {
+          "name": "resume",
+          "description": "浏览并恢复以前的对话会话",
+          "features": [
+            "交互式会话浏览器",
+            "搜索和过滤",
+            "按日期或消息计数排序",
+            "直接删除会话",
+            "恢复并继续对话"
+          ]
+        },
+        {
+          "name": "settings",
+          "description": "打开设置编辑器以查看和修改 Gemini CLI 设置",
+          "config_file": ".gemini/settings.json"
+        },
+        {
+          "name": "stats",
+          "description": "显示当前 Gemini CLI 会话的详细统计信息",
+          "includes": [
+            "令牌使用情况",
+            "缓存令牌节省（如果可用）",
+            "会话持续时间"
+          ]
+        },
+        {
+          "name": "theme",
+          "description": "打开对话框，让您更改 Gemini CLI 的视觉主题"
+        },
+        {
+          "name": "auth",
+          "description": "打开对话框，让您更改身份验证方法"
+        },
+        {
+          "name": "about",
+          "description": "显示版本信息。提交问题时请分享此信息"
+        },
+        {
+          "name": "tools",
+          "usage": "/tools [desc]",
+          "description": "显示 Gemini CLI 中当前可用的工具列表",
+          "subcommands": [
+            {
+              "name": "desc",
+              "aliases": ["descriptions"],
+              "description": "显示每个工具的详细描述"
+            },
+            {
+              "name": "nodesc",
+              "aliases": ["nodescriptions"],
+              "description": "隐藏工具描述，仅显示工具名称"
+            }
+          ]
+        },
+        {
+          "name": "privacy",
+          "description": "显示隐私通知并允许用户选择是否同意收集其数据"
+        },
+        {
+          "name": "quit",
+          "aliases": ["/exit"],
+          "description": "退出 Gemini CLI"
+        },
+        {
+          "name": "vim",
+          "description": "切换 vim 模式的开关",
+          "features": {
+            "NORMAL_mode": {
+              "navigation": "h/j/k/l 导航",
+              "word_jump": "w/b/e 按词跳转",
+              "line_end": "0/$开首尾，^ 转到首个非空字符",
+              "line_jump": "G 转到特定行，gg 转到第一行"
+            },
+            "INSERT_mode": {
+              "text_input": "标准文本输入",
+              "exit": "按 escape 返回 NORMAL 模式"
+            },
+            "editing": {
+              "delete": "x 删除字符",
+              "change": "c 更改",
+              "insert": "i/a 在前/后插入，o/O 下/上插入新行",
+              "complex": "dd 删除行，cc 改变行，dw/cw 按词删除/改变"
+            },
+            "count": "在命令前加数字（例如 3h、5w、10G）",
+            "repeat": "使用 . 重复最后一个编辑操作"
+          },
+          "config": "vim 模式偏好保存到 ~/.gemini/settings.json"
+        },
+        {
+          "name": "init",
+          "description": "分析当前目录并生成定制的 GEMINI.md 上下文文件"
+        }
+      ]
+    },
+    {
+      "id": "at_commands",
+      "name": "At 命令（@）",
+      "prefix": "@",
+      "description": "将文件或目录的内容作为对 Gemini 的提示的一部分包括在内",
+      "features": [
+        "Git 感知过滤",
+        "支持目录递归读取",
+        "排除忽略文件"
+      ],
+      "commands": [
+        {
+          "name": "@<path>",
+          "description": "将指定文件或目录的内容注入当前提示中",
+          "examples": [
+            "@path/to/your/file.txt 解释这个文本。",
+            "@src/my_project/ 总结此目录中的代码。",
+            "这个文件是关于什么的？@README.md"
+          ],
+          "details": {
+            "single_file": "读取该文件的内容",
+            "directory": "尝试读取该目录及任何子目录内的文件内容",
+            "spaces_in_path": "使用反斜杠转义（例如 @My\\ Documents/file.txt）",
+            "underlying_tool": "read_many_files 工具"
+          },
+          "git_aware_filtering": {
+            "description": "默认情况下排除 git 忽略的文件",
+            "excluded_examples": [
+              "node_modules/",
+              "dist/",
+              ".env",
+              ".git/"
+            ],
+            "configuration": "context.fileFiltering 设置"
+          },
+          "file_types": "适用于基于文本的文件，二进制文件可能被跳过或截断"
+        },
+        {
+          "name": "@（单独的 at 符号）",
+          "description": "如果键入单个 @ 符号而没有路径，则查询按原样传递给 Gemini 模型"
+        }
+      ],
+      "error_handling": [
+        "路径未找到或无效 → 显示错误消息",
+        "read_many_files 工具错误 → 报告权限问题等"
+      ]
+    },
+    {
+      "id": "shell_commands",
+      "name": "Shell 命令（!）",
+      "prefix": "!",
+      "description": "让您可以直接从 Gemini CLI 中与系统的 shell 交互",
+      "commands": [
+        {
+          "name": "!<shell_command>",
+          "description": "执行给定的 shell 命令",
+          "shell": {
+            "linux_macos": "bash",
+            "windows": "powershell.exe -NoProfile -Command"
+          },
+          "examples": [
+            "!ls -la（执行 ls -la 并返回到 Gemini CLI）",
+            "!git status（执行 git status 并返回到 Gemini CLI）"
+          ]
+        },
+        {
+          "name": "!（切换 shell 模式）",
+          "description": "单独键入 ! 可切换 shell 模式",
+          "enter_shell_mode": {
+            "behavior": "激活不同的颜色和'Shell 模式指示器'",
+            "text_input": "您键入的文本被直接解释为 shell 命令"
+          },
+          "exit_shell_mode": {
+            "behavior": "UI 恢复为标准外观",
+            "behavior2": "Gemini CLI 正常行为恢复"
+          }
+        }
+      ],
+      "warnings": [
+        "您在 shell 模式中执行的命令具有与直接在终端中运行它们相同的权限和影响"
+      ],
+      "environment": "当命令通过 ! 或在 shell 模式中执行时，GEMINI_CLI=1 环境变量在子进程的环境中被设置"
+    }
+  ],
+  "keyboard_shortcuts": [
+    {
+      "action": "撤销",
+      "shortcut": "Ctrl+Z",
+      "scope": "输入提示"
+    },
+    {
+      "action": "重做",
+      "shortcut": "Ctrl+Shift+Z",
+      "scope": "输入提示"
+    },
+    {
+      "action": "清除屏幕",
+      "shortcut": "Ctrl+L",
+      "scope": "全局",
+      "equivalent_command": "/clear"
+    }
+  ],
+  "quick_reference": {
+    "session_management": [
+      "/chat save <tag>",
+      "/chat resume <tag>",
+      "/resume",
+      "/stats"
+    ],
+    "development_tools": [
+      "/mcp",
+      "/tools",
+      "/directory add",
+      "/restore"
+    ],
+    "customization": [
+      "/settings",
+      "/theme",
+      "/vim",
+      "/memory add"
+    ],
+    "troubleshooting": [
+      "/bug",
+      "/mcp auth",
+      "/mcp refresh"
+    ]
+  },
+  "configuration_files": {
+    "settings": ".gemini/settings.json",
+    "hierarchical_memory": "GEMINI.md",
+    "vim_preferences": "~/.gemini/settings.json"
+  },
+  "file_locations": {
+    "checkpoint_linux_macos": "~/.gemini/tmp/<project_hash>/",
+    "checkpoint_windows": "C:\\Users\\<YourUsername>\\.gemini\\tmp\\<project_hash>\\"
+  }
+}

@@ -1,0 +1,38 @@
+{
+	"nodes":[
+		{"id":"flow_001_title","type":"text","x":350,"y":-50,"width":600,"height":80,"text":"# 迭代报告Agent - 核心工作流程","color":"5"},
+		{"id":"flow_002_start","type":"text","x":400,"y":80,"width":200,"height":60,"text":"**START**\n\n运行 npm run dev","color":"4"},
+		{"id":"flow_003_load_env","type":"text","x":400,"y":180,"width":200,"height":80,"text":"**步骤1**\n\n加载环境变量\n(VCS_TYPE, Token)","color":"2"},
+		{"id":"flow_004_validate","type":"text","x":400,"y":310,"width":200,"height":100,"text":"**步骤2**\n\n验证配置\n\n✓ 类型\n✓ URL\n✓ Token","color":"3"},
+		{"id":"flow_005_decision","type":"text","x":400,"y":460,"width":200,"height":80,"text":"**决策**\n\n配置有效？","color":"3"},
+		{"id":"flow_006_error","type":"text","x":100,"y":460,"width":180,"height":80,"text":"❌ 配置错误\n\n输出错误信息\n退出","color":"1"},
+		{"id":"flow_007_init_adapter","type":"text","x":400,"y":610,"width":200,"height":80,"text":"**步骤3**\n\n初始化VCS适配器\n\nVCSFactory.create()","color":"2"},
+		{"id":"flow_008_get_prs","type":"text","x":400,"y":750,"width":200,"height":100,"text":"**步骤4**\n\n获取合并的PR\n\ngetMergedPRs()\n↓\n列表：id, title, author","color":"2"},
+		{"id":"flow_009_loop_prs","type":"text","x":400,"y":910,"width":200,"height":100,"text":"**步骤5**\n\n遍历每个PR\n\nfor each PR:\n  getFileStat()","color":"2"},
+		{"id":"flow_010_file_stat","type":"text","x":700,"y":750,"width":200,"height":150,"text":"获取文件统计\n\n• 改动文件数\n• 新增行数\n• 删除行数\n• 提交数","color":"6"},
+		{"id":"flow_011_aggregate","type":"text","x":400,"y":1070,"width":200,"height":100,"text":"**步骤6**\n\n聚合数据\n\n求和所有改动\n生成总统计","color":"2"},
+		{"id":"flow_012_generate_md","type":"text","x":400,"y":1230,"width":200,"height":100,"text":"**步骤7**\n\n生成Markdown\n\n统计表 + PR列表\n+ 检查清单","color":"2"},
+		{"id":"flow_013_save_file","type":"text","x":400,"y":1390,"width":200,"height":100,"text":"**步骤8**\n\n保存文件\n\n./release-reports/\nv*.md","color":"2"},
+		{"id":"flow_014_output_stats","type":"text","x":400,"y":1550,"width":200,"height":100,"text":"**步骤9**\n\n输出统计信息\n\n• PR数\n• 文件数\n• 增删行","color":"2"},
+		{"id":"flow_015_end","type":"text","x":400,"y":1710,"width":200,"height":60,"text":"**END**\n✅ 报告生成完成","color":"4"},
+		{"id":"flow_016_time_estimate","type":"text","x":700,"y":1710,"width":200,"height":150,"text":"### 耗时估计\n\n步骤1-2: 100ms\n步骤3: 200ms\n步骤4: 500ms\n步骤5-6: 1-5s\n步骤7-9: 100ms\n\n**总计：2-10秒**","color":"5"},
+		{"id":"flow_017_legend","type":"text","x":100,"y":80,"width":200,"height":200,"text":"### 图例\n\n🟩 绿色：开始/结束\n🟧 橙色：异常\n🟨 黄色：决策\n🟦 蓝色：处理\n🟪 紫色：其他","color":"6"}
+	],
+	"edges":[
+		{"id":"flow_edge_001","fromNode":"flow_001_title","fromSide":"bottom","toNode":"flow_002_start","toSide":"top","toEnd":"arrow"},
+		{"id":"flow_edge_002","fromNode":"flow_002_start","fromSide":"bottom","toNode":"flow_003_load_env","toSide":"top","toEnd":"arrow"},
+		{"id":"flow_edge_003","fromNode":"flow_003_load_env","fromSide":"bottom","toNode":"flow_004_validate","toSide":"top","toEnd":"arrow"},
+		{"id":"flow_edge_004","fromNode":"flow_004_validate","fromSide":"bottom","toNode":"flow_005_decision","toSide":"top","toEnd":"arrow"},
+		{"id":"flow_edge_005_error","fromNode":"flow_005_decision","fromSide":"left","toNode":"flow_006_error","toSide":"right","label":"❌ No","color":"1"},
+		{"id":"flow_edge_006_ok","fromNode":"flow_005_decision","fromSide":"bottom","toNode":"flow_007_init_adapter","toSide":"top","toEnd":"arrow","label":"✅ Yes","color":"4"},
+		{"id":"flow_edge_007","fromNode":"flow_007_init_adapter","fromSide":"bottom","toNode":"flow_008_get_prs","toSide":"top","toEnd":"arrow"},
+		{"id":"flow_edge_008","fromNode":"flow_008_get_prs","fromSide":"bottom","toNode":"flow_009_loop_prs","toSide":"top","toEnd":"arrow"},
+		{"id":"flow_edge_009_loop","fromNode":"flow_009_loop_prs","fromSide":"right","toNode":"flow_010_file_stat","toSide":"top","toEnd":"arrow","label":"for each"},
+		{"id":"flow_edge_010_loop_back","fromNode":"flow_010_file_stat","fromSide":"bottom","toNode":"flow_009_loop_prs","toSide":"right","fromEnd":"none","toEnd":"arrow"},
+		{"id":"flow_edge_011","fromNode":"flow_009_loop_prs","fromSide":"bottom","toNode":"flow_011_aggregate","toSide":"top","toEnd":"arrow","label":"完成"},
+		{"id":"flow_edge_012","fromNode":"flow_011_aggregate","fromSide":"bottom","toNode":"flow_012_generate_md","toSide":"top","toEnd":"arrow"},
+		{"id":"flow_edge_013","fromNode":"flow_012_generate_md","fromSide":"bottom","toNode":"flow_013_save_file","toSide":"top","toEnd":"arrow"},
+		{"id":"flow_edge_014","fromNode":"flow_013_save_file","fromSide":"bottom","toNode":"flow_014_output_stats","toSide":"top","toEnd":"arrow"},
+		{"id":"flow_edge_015","fromNode":"flow_014_output_stats","fromSide":"bottom","toNode":"flow_015_end","toSide":"top","toEnd":"arrow"}
+	]
+}

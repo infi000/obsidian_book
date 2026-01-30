@@ -1,0 +1,28 @@
+{
+  "mcpServers": {
+    "sfcode": {
+      "command": "{",
+      "args": [
+        "mcpServers:",
+        "{",
+        "sfdoc:",
+        "{",
+        "command:",
+        "pnpm,",
+        "args:",
+        "[dlx,",
+        "@sf/sfdoc-mcp],",
+        "description:",
+        "顺丰腾讯文档 MCP 服务器,",
+        "env:",
+        "{",
+        "NPM_CONFIG_REGISTRY:",
+        "https://artifactory.sf-express.com/artifactory/api/npm/npm/",
+        "}",
+        "}",
+        "}",
+        "}"
+      ]
+    }
+  }
+}

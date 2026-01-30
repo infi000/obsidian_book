@@ -1,0 +1,163 @@
+---
+# Daily Archive Consolidation Skill
+# 功能: 自动聚合会议记录、临时笔记、CR记录到每日归档
+# 触发: /archive-daily
+
+name: "Daily Archive Consolidation"
+id: "daily-archive"
+version: "1.0.0"
+
+author: "Claudian"
+description: "自动聚合会议记录、临时笔记、CR记录，按日期分组到每日归档文档"
+
+trigger:
+  command: "/archive-daily"
+  aliases:
+    - "/archive"
+    - "/daily-summary"
+
+capabilities:
+  - read_files
+  - write_files
+  - query_vault
+  - parse_markdown
+
+parameters:
+  targetDate:
+    type: "date"
+    default: "today"
+    description: "目标日期，默认为当天"
+
+  outputFile:
+    type: "string"
+    default: "每日归档总结.md"
+    description: "输出文档路径"
+
+  includeHistory:
+    type: "boolean"
+    default: true
+    description: "是否更新历史记录统计"
+
+sources:
+  - path: "会议记录.md"
+    category: "📌 会议记录"
+    priority: 1
+    enabled: true
+
+  - path: "临时笔记.md"
+    category: "📝 临时笔记"
+    priority: 2
+    enabled: true
+
+  - path: "cr记录.md"
+    category: "🔍 CR 记录"
+    priority: 3
+    enabled: true
+
+behavior:
+  extraction:
+    method: "heading-based"
+    skipEmpty: true
+    preserveFormatting: true
+    minLength: 10
+
+  aggregation:
+    groupByDate: true
+    groupByCategory: true
+    preserveLinks: true
+
+  output:
+    format: "markdown"
+    insertPosition: "before-section"
+    sectionMarker: "## 📋 历史记录"
+    updateTimestamp: true
+
+logging:
+  level: "info"
+  verbose: false
+
+shortcuts:
+  quick-run: "⇧ + ⌘ + A"
+
+performance:
+  cacheResults: true
+  cacheDuration: 300
+
+---
+
+# Skill Implementation
+
+## 执行流程
+
+1. **加载配置**: 读取 `_archive_config.json`
+2. **扫描源文件**: 逐个读取会议记录、临时笔记、CR 记录
+3. **提取内容**: 按规则提取有效内容（跳过空行、代码块等）
+4. **分类聚合**: 按类别分组，生成今日章节
+5. **更新输出**: 在归档文档中插入新章节
+6. **更新统计**: 更新历史记录和时间戳
+
+## 触发方式
+
+### 方式 1: 命令行
+```bash
+node archive-daily.js
+```
+
+### 方式 2: Obsidian 命令面板
+按 Cmd+P (Mac) / Ctrl+P (Windows)，输入:
+```
+Daily Archive Consolidation
+```
+
+### 方式 3: 快捷键
+```
+⇧ + ⌘ + A (Mac)
+Shift + Ctrl + A (Windows)
+```
+
+## 输出示例
+
+```markdown
+## 2026年1月21日
+
+### 📌 会议记录
+- 核心方向: 工程化 + 要有提效
+- 评估指标: 对外/对内(AI 提效)
+
+### 📝 临时笔记
+- git workspace 多 agent 协同工作
+- 浏览器元素快速定位
+
+### 🔍 CR 记录
+- 时间字段: 用 unix() 替代 format('X')
+- 国际化环境变量正确写法
+```
+
+## 配置自定义
+
+编辑 `_archive_config.json` 来:
+- 添加/删除数据源
+- 修改输出路径
+- 调整提取规则
+- 配置定时任务
+
+## 常见问题
+
+**Q: 脚本找不到源文件？**
+A: 检查 `_archive_config.json` 中的路径是否正确
+
+**Q: 内容出现重复？**
+A: 检查 `最后更新` 时间戳，避免同天多次运行
+
+**Q: 如何禁用某个数据源？**
+A: 在 `_archive_config.json` 中设置 `"enabled": false`
+
+## 相关文件
+
+- [[每日归档总结.md]] - 输出文档
+- [[_archive_config.json]] - 配置文件
+- [[archive-daily.js]] - 主脚本
+- [[每日归档使用指南.md]] - 完整文档
+
+---
+版本: 1.0.0 | 状态: ✅ 就绪 | 更新: 2026-01-21
