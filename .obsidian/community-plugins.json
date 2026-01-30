@@ -3,8 +3,9 @@
   "obsidian-git",
   "obsidian-excalidraw-plugin",
   "claudian",
-  "obsidian-kanban",
   "obsidian-reminder-plugin",
   "obsidian-custom-attachment-location",
-  "calendar"
+  "calendar",
+  "templater-obsidian",
+  "obsidian-icon-folder"
 ]

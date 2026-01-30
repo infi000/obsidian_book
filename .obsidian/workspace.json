@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "b4ed1336286745ee",
+        "id": "88a7f593fac878d7",
         "type": "tabs",
         "children": [
           {
-            "id": "ce946a90d651b00b",
+            "id": "a9d7c9ecbba9b5a6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "临时笔记.md",
+                "file": "每日记录/2026-01-29.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "临时笔记"
+              "title": "2026-01-29"
             }
           }
         ]
@@ -191,10 +191,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "会议记录.md"
+                "file": "每日记录/2026-01-29.md"
               },
               "icon": "lucide-info",
-              "title": "会议记录的笔记属性"
+              "title": "2026-01-29的笔记属性"
             }
           },
           {
@@ -218,7 +218,7 @@
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -226,7 +226,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-kanban:创建新看板": false,
       "bases:新建数据库": false,
       "obsidian-git:Open Git source control": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
@@ -238,15 +237,30 @@
       "command-palette:打开命令面板": false,
       "claudian:Open Claudian": false,
       "workspaces:管理工作区布局": false,
-      "markdown-importer:打开 Markdown 格式转换器": true
+      "markdown-importer:打开 Markdown 格式转换器": true,
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "a9f2f527feda5eb9",
+  "active": "78b74d0792f5b66b",
   "lastOpenFiles": [
+    "每日记录/2026-01-27.md",
+    "每日记录/2026-01-23.md",
+    "每日记录/2026-01-26.md",
+    "模板文件夹/日记模板.md",
+    "每日记录/2026-01-29.md",
+    "每日记录/2026-01-30.md",
+    "每日记录/2026-01-21.md",
+    "模板文件夹/日记模板-增强版.md",
+    "未命名.md",
+    "7e6853d3a5807f7c776c6b64aca022d0__b2d152c6-62ba-4eae-918c-3712d4af66e3.jpg",
+    "AI研发全流程工程化-前端全链路9月目标规划.md",
+    "未命名.base",
+    "未命名 1.md",
     "cr记录.md",
+    "每日记录/2026-01-28.md",
+    "临时笔记.md",
     "assets/cr记录/82c491152ec5f52d295fbfe911241cce__055cf74dbdf065e3e83fe6a21bcddf84.png",
     "assets/cr记录",
-    "临时笔记.md",
     "assets/临时笔记/82c491152ec5f52d295fbfe911241cce__055cf74dbdf065e3e83fe6a21bcddf84 1.png",
     "assets/临时笔记/82c491152ec5f52d295fbfe911241cce__055cf74dbdf065e3e83fe6a21bcddf84.png",
     "assets/临时笔记",
@@ -254,38 +268,24 @@
     "每日归档使用指南.md",
     "灵感记录.md",
     "前端工程化9月目标脑图.canvas",
-    "每日记录/2026-01-29.md",
-    "每日记录/2026-01-30.md",
     "Pasted image 20260126151135.png",
     "obsidian_book",
     "未命名 1.base",
     "未命名看板.md",
     "未命名看板 1.md",
-    "每日记录/2026-01-23.md",
-    "每日记录/2026-01-21.md",
-    "每日记录/2026-01-26.md",
-    "每日记录/2026-01-27.md",
-    "每日记录/2026-01-28.md",
     "微创新评审/评审结果.md",
     "微创新评审/评分标准.md",
     "微创新评审/评审文件/前端监控平台SourceMap工程化与 AI 异常诊断实践.md",
     "微创新评审/评审文件/一个检测拆包后Chunk间循环依赖的Vite插件.md",
     "微创新评审/评审文件",
-    "未命名.md",
     "微创新评审",
     "11728b8b3da3ba03b3d3d9ec3e6470c9__383060c429322385427c7babbf473ebc.png",
-    "7e6853d3a5807f7c776c6b64aca022d0__b2d152c6-62ba-4eae-918c-3712d4af66e3.jpg",
     "页面加载性能优化方案及实现指南.md",
     "页面加载性能优化方案及实现指南.docx",
     "汇报总结/AI体系化建设/🎯 第1层：「穿起来」的完整流程框架.md",
     "汇报总结/AI体系化建设/💡 领导需求深度分析.md",
     "汇报总结/AI体系化建设/素材/参考架构图.md",
-    "汇报总结/AI体系化建设/素材/之前总结的流程图.md",
-    "汇报总结/AI体系化建设/素材/会议内容.md",
-    "前端工程化-按工具链架构的9月目标.md",
-    "会议记录.md",
     "汇报总结/AI体系化建设/素材",
-    "汇报总结/AI体系化建设",
     "迭代报告Agent/迭代报告Agent-数据流转图.canvas",
     "迭代报告Agent/迭代报告Agent-核心工作流程.canvas",
     "迭代报告Agent/迭代报告Agent-架构图.canvas",
