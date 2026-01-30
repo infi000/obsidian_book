@@ -4,5 +4,7 @@
   "obsidian-excalidraw-plugin",
   "claudian",
   "obsidian-kanban",
-  "obsidian-reminder-plugin"
+  "obsidian-reminder-plugin",
+  "obsidian-custom-attachment-location",
+  "calendar"
 ]

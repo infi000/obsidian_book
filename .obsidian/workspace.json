@@ -11,12 +11,14 @@
             "id": "ce946a90d651b00b",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Pasted image 20260126151135.png"
+                "file": "临时笔记.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260126151135"
+              "icon": "lucide-file",
+              "title": "临时笔记"
             }
           }
         ]
@@ -154,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pasted image 20260126151135.png",
+                "file": "每日记录/2026-01-29.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Pasted image 20260126151135 的大纲"
+              "title": "2026-01-29 的大纲"
             }
           },
           {
@@ -204,9 +206,19 @@
               "icon": "clock",
               "title": "Reminders"
             }
+          },
+          {
+            "id": "a9f2f527feda5eb9",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 9
       }
     ],
     "direction": "horizontal",
@@ -229,8 +241,22 @@
       "markdown-importer:打开 Markdown 格式转换器": true
     }
   },
-  "active": "78b74d0792f5b66b",
+  "active": "a9f2f527feda5eb9",
   "lastOpenFiles": [
+    "cr记录.md",
+    "assets/cr记录/82c491152ec5f52d295fbfe911241cce__055cf74dbdf065e3e83fe6a21bcddf84.png",
+    "assets/cr记录",
+    "临时笔记.md",
+    "assets/临时笔记/82c491152ec5f52d295fbfe911241cce__055cf74dbdf065e3e83fe6a21bcddf84 1.png",
+    "assets/临时笔记/82c491152ec5f52d295fbfe911241cce__055cf74dbdf065e3e83fe6a21bcddf84.png",
+    "assets/临时笔记",
+    "assets",
+    "每日归档使用指南.md",
+    "灵感记录.md",
+    "前端工程化9月目标脑图.canvas",
+    "每日记录/2026-01-29.md",
+    "每日记录/2026-01-30.md",
+    "Pasted image 20260126151135.png",
     "obsidian_book",
     "未命名 1.base",
     "未命名看板.md",
@@ -239,9 +265,7 @@
     "每日记录/2026-01-21.md",
     "每日记录/2026-01-26.md",
     "每日记录/2026-01-27.md",
-    "每日记录/2026-01-29.md",
     "每日记录/2026-01-28.md",
-    "每日记录/2026-01-30.md",
     "微创新评审/评审结果.md",
     "微创新评审/评分标准.md",
     "微创新评审/评审文件/前端监控平台SourceMap工程化与 AI 异常诊断实践.md",
@@ -254,36 +278,24 @@
     "页面加载性能优化方案及实现指南.md",
     "页面加载性能优化方案及实现指南.docx",
     "汇报总结/AI体系化建设/🎯 第1层：「穿起来」的完整流程框架.md",
-    "灵感记录.md",
     "汇报总结/AI体系化建设/💡 领导需求深度分析.md",
     "汇报总结/AI体系化建设/素材/参考架构图.md",
     "汇报总结/AI体系化建设/素材/之前总结的流程图.md",
     "汇报总结/AI体系化建设/素材/会议内容.md",
     "前端工程化-按工具链架构的9月目标.md",
     "会议记录.md",
-    "汇报总结/AI体系化建设/素材/领导的核心需求剖析.md",
-    "汇报总结/AI体系化建设/素材/🏗️ 架构第3层：系统集成架构图.md",
     "汇报总结/AI体系化建设/素材",
     "汇报总结/AI体系化建设",
-    "汇报总结",
     "迭代报告Agent/迭代报告Agent-数据流转图.canvas",
     "迭代报告Agent/迭代报告Agent-核心工作流程.canvas",
     "迭代报告Agent/迭代报告Agent-架构图.canvas",
-    "未命名.base",
     "Pasted image 20260126151209.png",
-    "Pasted image 20260126151135.png",
     "Pasted image 20260126150615.png",
-    "技术学习文档/clawdbot调研",
-    "技术学习文档/ralph调研",
-    "前端工程化9月目标脑图.canvas",
     "Pasted image 20260122140842.png",
     "每日记录/未命名.canvas",
     "984b01c554f3c1e665debd20a1f1ecf7__f381b5dc-9708-4909-913b-a9e2af17c345.jpg",
-    "Pasted image 20260122114931.png",
     "技术学习文档/gemini-cli/CLI-命令系统.canvas",
     "未命名.canvas",
-    "图片/Pasted image 20260112114318.png",
-    "图片/Pasted image 20260112115458.png",
     "未命名 1.canvas"
   ]
 }
