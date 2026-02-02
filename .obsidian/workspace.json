@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 565.5124969482422
+    "width": 430.5124969482422
   },
   "right": {
     "id": "2e43719cbbe6af2e",
@@ -222,7 +222,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 537.5
+    "width": 684.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -241,8 +241,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "a9d7c9ecbba9b5a6",
+  "active": "8f3b557f5aa496f4",
   "lastOpenFiles": [
+    "个人记录/瞎聊",
+    "个人记录",
     "模板文件夹/日记模板.md",
     "每日记录/2026-02-02.md",
     "每日记录/2026-01-30.md",
@@ -280,12 +282,10 @@
     "未命名 1.base",
     "未命名看板.md",
     "未命名看板 1.md",
-    "微创新评审/评审结果.md",
     "微创新评审/评审文件",
     "微创新评审",
     "11728b8b3da3ba03b3d3d9ec3e6470c9__383060c429322385427c7babbf473ebc.png",
     "页面加载性能优化方案及实现指南.docx",
-    "汇报总结/AI体系化建设/素材",
     "迭代报告Agent/迭代报告Agent-数据流转图.canvas",
     "迭代报告Agent/迭代报告Agent-核心工作流程.canvas",
     "迭代报告Agent/迭代报告Agent-架构图.canvas",
