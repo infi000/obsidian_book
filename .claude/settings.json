@@ -38,10 +38,10 @@
       "Remove-Partition"
     ]
   },
-  "model": "claude/claude-haiku-4-5",
+  "model": "opus",
   "enableAutoTitleGeneration": true,
   "titleGenerationModel": "",
-  "thinkingBudget": "off",
+  "thinkingBudget": "medium",
   "permissionMode": "yolo",
   "lastNonPlanPermissionMode": "yolo",
   "permissions": [
@@ -96,7 +96,7 @@
   ],
   "excludedTags": [],
   "mediaFolder": "",
-  "environmentVariables": "ANTHROPIC_BASE_URL=\"https://claudecode.sf-express.com/ccr/\"\nexport ANTHROPIC_AUTH_TOKEN=\"1\"\nexport CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1",
+  "environmentVariables": "ANTHROPIC_BASE_URL=\"https://claudecode.sf-express.com/ccr/\"\nANTHROPIC_AUTH_TOKEN=\"1\"\nCLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1",
   "envSnippets": [],
   "systemPrompt": "",
   "allowedExportPaths": [
