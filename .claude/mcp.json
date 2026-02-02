@@ -1,9 +1,9 @@
 {
   "mcpServers": {
-    "sfcode": {
+    "sfdoc": {
       "command": "{",
       "args": [
-        "sfdoc:",
+        "sfdoc-mcp:",
         "{",
         "command:",
         "npx,",
@@ -19,7 +19,10 @@
         "}",
         "}",
         "}"
-      ]
+      ],
+      "env": {
+        "NPM_CONFIG_REGISTRY": "https://artifactory.sf-express.com/artifactory/api/npm/npm/"
+      }
     }
   }
 }
