@@ -96,7 +96,7 @@
   ],
   "excludedTags": [],
   "mediaFolder": "",
-  "environmentVariables": "ANTHROPIC_AUTH_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NLZXkiOiJhcGkyX2I4NDZhZDE3LTJkOTctNGM4OS04NzRmLTQ3ODU3ZjJhYWMwZiIsImVudiI6InByZCIsImp0aSI6MjUwMzYsInByb2plY3RfaWQiOjE0MTA3LCJzeXN0ZW1LZXkiOiIzZmE1MThlOC0wZTViLWY2M2EtZWMyZS0yMWIyZGI5OTVjZjMifQ.SURlfMIC3Im-m21V7KiHSTFCIkwlwgzCdjoQD_14xqo\nANTHROPIC_BASE_URL=http://llm-model-hub-apis.sf-express.com\nANTHROPIC_API_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NLZXkiOiJhcGkyX2I4NDZhZDE3LTJkOTctNGM4OS04NzRmLTQ3ODU3ZjJhYWMwZiIsImVudiI6InByZCIsImp0aSI6MjUwMzYsInByb2plY3RfaWQiOjE0MTA3LCJzeXN0ZW1LZXkiOiIzZmE1MThlOC0wZTViLWY2M2EtZWMyZS0yMWIyZGI5OTVjZjMifQ.SURlfMIC3Im-m21V7KiHSTFCIkwlwgzCdjoQD_14xqo\nANTHROPIC_MODEL=claude/claude-haiku-4-5",
+  "environmentVariables": "ANTHROPIC_BASE_URL=\"https://claudecode.sf-express.com/ccr/\"\nexport ANTHROPIC_AUTH_TOKEN=\"1\"\nexport CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1",
   "envSnippets": [],
   "systemPrompt": "",
   "allowedExportPaths": [
