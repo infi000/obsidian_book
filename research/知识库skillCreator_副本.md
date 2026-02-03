@@ -36,7 +36,7 @@
 ### 快速检查清单
 
 ```
-[ ] 项目有 README.md 、有SFCODE.md吗？
+[ ] 项目有 README.md 吗？
 [ ] 项目有 package.json（如果是 Node.js）吗？
 [ ] 项目有现有的规范文档吗？
 [ ] 项目的主文件夹有哪些？
@@ -52,35 +52,35 @@
 ### 完整的目录结构
 
 ```
-your-project-kb-skill/
+你的项目名-知识库Skill/
 │
 ├── SKILL.md                    ← 主入口（必须）
 │
-├── 📂 01_project-intro/
+├── 📂 01_项目介绍/
 │   ├── overview.md             项目概述
 │   ├── architecture.md         架构设计
 │   └── tech-stack.md           技术栈说明
 │
-├── 📂 02_standards/
+├── 📂 02_开发规范/
 │   ├── overview.md             规范总览
 │   ├── code-standards.md       代码规范
 │   ├── naming-conventions.md   命名规范
 │   ├── file-structure.md       文件结构
 │   └── git-workflow.md         Git 提交规范
 │
-├── 📂 03_best-practices/
+├── 📂 03_最佳实践/
 │   ├── overview.md             最佳实践总览
 │   ├── common-patterns.md      常见模式
 │   ├── performance-tips.md     性能优化
 │   └── security-guidelines.md  安全检查
 │
-├── 📂 04_guides/
+├── 📂 04_开发指南/
 │   ├── quick-start.md          快速开始
 │   ├── dev-environment.md      开发环境
 │   ├── new-page-template.md    新页面模板
 │   └── troubleshooting.md      故障排查
 │
-└── 📂 05_reference/
+└── 📂 05_参考资料/
     ├── faq.md                  常见问题
     ├── glossary.md             术语表
     └── useful-links.md         有用链接
@@ -92,14 +92,14 @@ your-project-kb-skill/
 # 在你的项目根目录执行：
 
 # 1. 创建主文件夹
-mkdir "your-project-kb-skill"
+mkdir "项目名-知识库Skill"
 
 # 2. 创建子文件夹
-mkdir "your-project-kb-skill/01_project-intro"
-mkdir "your-project-kb-skill/02_standards"
-mkdir "your-project-kb-skill/03_best-practices"
-mkdir "your-project-kb-skill/04_guides"
-mkdir "your-project-kb-skill/05_reference"
+mkdir "项目名-知识库Skill/01_项目介绍"
+mkdir "项目名-知识库Skill/02_开发规范"
+mkdir "项目名-知识库Skill/03_最佳实践"
+mkdir "项目名-知识库Skill/04_开发指南"
+mkdir "项目名-知识库Skill/05_参考资料"
 
 # 3. 创建所有的 .md 文件
 ```
@@ -129,26 +129,26 @@ mkdir "your-project-kb-skill/05_reference"
 
 | 章节 | 用途 | 链接 |
 |-----|-----|------|
-| **项目介绍** | 了解项目结构和技术选择 | [[01_project-intro/overview\|项目概述]] |
-| **开发规范** | 遵循开发标准 | [[02_standards/overview\|规范总览]] |
-| **最佳实践** | 学习推荐做法 | [[03_best-practices/overview\|最佳实践]] |
-| **开发指南** | 快速上手 | [[04_guides/quick-start\|快速开始]] |
-| **参考资料** | 常见问题和术语 | [[05_reference/faq\|常见问题]] |
+| **项目介绍** | 了解项目结构和技术选择 | [[01_项目介绍/overview\|项目概述]] |
+| **开发规范** | 遵循开发标准 | [[02_开发规范/overview\|规范总览]] |
+| **最佳实践** | 学习推荐做法 | [[03_最佳实践/overview\|最佳实践]] |
+| **开发指南** | 快速上手 | [[04_开发指南/quick-start\|快速开始]] |
+| **参考资料** | 常见问题和术语 | [[05_参考资料/faq\|常见问题]] |
 
 ## 🚀 我是新人，怎么开始？
 
-1. 先看 [[01_project-intro/overview\|项目概述]]
-2. 再看 [[04_guides/quick-start\|快速开始]]
-3. 最后查 [[04_guides/dev-environment\|开发环境]]
+1. 先看 [[01_项目介绍/overview\|项目概述]]
+2. 再看 [[04_开发指南/quick-start\|快速开始]]
+3. 最后查 [[04_开发指南/dev-environment\|开发环境]]
 
 ## 💡 我想写代码，怎么参考规范？
 
-1. 看 [[02_standards/code-standards\|代码规范]]
-2. 看 [[02_standards/naming-conventions\|命名规范]]
-3. 看 [[03_best-practices/common-patterns\|常见模式]]
+1. 看 [[02_开发规范/code-standards\|代码规范]]
+2. 看 [[02_开发规范/naming-conventions\|命名规范]]
+3. 看 [[03_最佳实践/common-patterns\|常见模式]]
 ```
 
-#### 📂 01_project-intro/ - 项目的三个核心文件
+#### 📂 01_项目介绍/ - 项目的三个核心文件
 
 **overview.md** - 项目概述
 ```markdown
@@ -234,7 +234,7 @@ mkdir "your-project-kb-skill/05_reference"
 记录关键库的版本要求
 ```
 
-#### 📂 02_standards/ - 最重要的部分
+#### 📂 02_开发规范/ - 最重要的部分
 
 **overview.md** - 规范导航
 ```markdown
@@ -395,20 +395,7 @@ Closes #123
 - 至少一个 Code Review 通过才能合并
 ```
 
-#### 📂 03_best-practices/ - 可选但有用
-
-**overview.md** - 最佳实践总览
-```markdown
-# 最佳实践总览
-
-这里列出所有推荐做法，快速导航。
-
-| 最佳实践 | 说明 |
-|--------|------|
-| [[common-patterns\|常见模式]] | 项目中常见的实现模式 |
-| [[performance-tips\|性能优化]] | 性能优化的关键点 |
-| [[security-guidelines\|安全指南]] | 安全相关的检查要点 |
-```
+#### 📂 03_最佳实践/ - 可选但有用
 
 **common-patterns.md** - 常见模式
 ```markdown
@@ -479,21 +466,7 @@ Closes #123
 [补充你项目特有的安全要求]
 ```
 
-#### 📂 04_guides/ - 实用指南
-
-**overview.md** - 开发指南总览
-```markdown
-# 开发指南总览
-
-新成员快速上手、开发、故障排查的完整指南。
-
-| 指南 | 说明 |
-|-----|------|
-| [[quick-start\|快速开始]] | 初次安装和启动 |
-| [[dev-environment\|开发环境]] | 开发环境配置 |
-| [[new-page-template\|新页面模板]] | 如何快速生成新页面 |
-| [[troubleshooting\|故障排查]] | 常见问题排查 |
-```
+#### 📂 04_开发指南/ - 实用指南
 
 **quick-start.md** - 快速开始
 ```markdown
@@ -600,20 +573,7 @@ src/pages/YourPageName/
 [补充你团队遇到的常见问题]
 ```
 
-#### 📂 05_reference/ - 参考资料
-
-**overview.md** - 参考资料总览
-```markdown
-# 参考资料总览
-
-常见问题、术语表和有用链接的汇总。
-
-| 资料 | 说明 |
-|-----|------|
-| [[faq\|常见问题]] | 项目相关的常见问题解答 |
-| [[glossary\|术语表]] | 项目中使用的专业术语 |
-| [[useful-links\|有用链接]] | 相关文档和资源的链接 |
-```
+#### 📂 05_参考资料/
 
 **faq.md** - 常见问题
 ```markdown

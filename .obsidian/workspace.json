@@ -11,10 +11,14 @@
             "id": "803fa842f8ca7707",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "research/知识库skillCreator.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "知识库skillCreator"
             }
           }
         ]
@@ -237,10 +241,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "78b74d0792f5b66b",
+  "active": "803fa842f8ca7707",
   "lastOpenFiles": [
-    "research/知识库skillCreator.md",
+    "research/知识库skillCreator_副本.md",
     "research/Skill创建指南.md",
+    "research/知识库skillCreator.md",
     "research/知识库Skill生成器.md",
     "research/通用项目Skill框架/使用Skill生成器.md",
     "research/通用项目Skill框架/Skill生成器.md",
@@ -265,7 +270,6 @@
     "research/通用项目Skill框架/📑 完整文件索引.md",
     "research/通用项目Skill框架/工作流型Skill/guidelines",
     "research/通用项目Skill框架/知识库型Skill/best-practices/security-checklist.md",
-    "research/通用项目Skill框架/知识库型Skill/guides/new-page-template.md",
     "research/通用项目Skill框架/工作流型Skill/standards",
     "research/通用项目Skill框架/工作流型Skill/workflow",
     "research/通用项目Skill框架/工作流型Skill",
