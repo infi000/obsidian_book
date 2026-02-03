@@ -320,7 +320,6 @@ mkdir "your-project-kb-skill/05_reference"
 
 ## 推荐的项目结构
 
-```
 project/
 ├── src/
 │   ├── components/      # React 组件
@@ -335,7 +334,6 @@ project/
 ├── public/             # 静态资源
 ├── tests/              # 测试文件
 └── README.md
-```
 
 ## 新建文件时
 
@@ -360,11 +358,7 @@ project/
 ## 提交信息规范
 
 ```
-<type>(<scope>): <subject>
 
-<body>
-
-<footer>
 ```
 
 **Type 包括：**
@@ -557,7 +551,6 @@ Closes #123
 
 ### 第 1 步：创建文件结构
 
-```
 src/pages/YourPageName/
 ├── YourPageName.tsx        # 主组件
 ├── YourPageName.module.css # 样式（如果使用 CSS Module）
@@ -566,6 +559,7 @@ src/pages/YourPageName/
 ├── api.ts                 # 数据服务
 └── __tests__/             # 测试文件
     └── YourPageName.test.tsx
+```
 ```
 
 ### 第 2 步：使用模板
