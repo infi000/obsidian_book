@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "0c3caed0b9c15447",
+        "id": "18f00cd8bab8643f",
         "type": "tabs",
         "children": [
           {
-            "id": "803fa842f8ca7707",
+            "id": "bf5feab01ff6e149",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "每日记录/2026-02-03.md",
+                "file": "research/Skill创建工具箱/知识库skillCreator.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-02-03"
+              "title": "知识库skillCreator"
+            }
+          },
+          {
+            "id": "574d4ffb782e3c77",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "research/Skill创建工具箱/知识库skillCreator.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "知识库skillCreator"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 430.5124969482422
+    "width": 430.5124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "2e43719cbbe6af2e",
@@ -241,34 +257,37 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "803fa842f8ca7707",
+  "active": "78b74d0792f5b66b",
   "lastOpenFiles": [
+    "research/Skill创建工具箱/Skill创建指南.md",
+    "research/Skill创建工具箱/知识库skillCreator.md",
+    "每日记录/2026-02-03.md",
+    "research/Skill创建工具箱/知识库Skill生成器.md",
+    "research/Skill创建工具箱/知识库skillCreator_副本.md",
+    "research/Skill创建工具箱.md",
+    "每日记录/2026-01-30.md",
     "每日记录/2026-02-02.md",
+    "research/知识库Skill生成器.md",
     "research/知识库skillCreator.md",
+    "research/Skill创建工具箱",
+    "research/通用项目Skill框架/知识库型Skill/project-intro/overview.md",
+    "research/通用项目Skill框架/📑 完整文件索引.md",
+    "research/通用项目Skill框架/🎉 项目完成总结.md",
+    "research/通用项目Skill框架/Skill生成器.md",
+    "research/通用项目Skill框架/知识库型Skill/project-intro/tech-stack.md",
+    "prompt/README.md",
+    "prompt/Prompt生成器-标准格式.md",
+    "未命名 3.base",
+    "未命名 2.base",
     "research/知识库skillCreator_副本.md",
     "research/Skill创建指南.md",
-    "research/知识库Skill生成器.md",
     "research/通用项目Skill框架/使用Skill生成器.md",
-    "research/通用项目Skill框架/Skill生成器.md",
     "skills/README.md",
     "research/项目Skill自动生成器.md",
     "research/CodeReview_Skill生成器.md",
-    "research/通用项目Skill框架/知识库型Skill/project-intro/overview.md",
     "research/通用项目Skill框架/知识库型Skill/SKILL.md",
     "research/通用项目Skill框架/工作流型Skill/SKILL.md",
-    "research/通用项目Skill框架/🎉 项目完成总结.md",
     "research/通用项目Skill框架/工作流型Skill/workflow/step1-understand-context.md",
-    "research/通用项目Skill框架/工作流型Skill/workflow/step2-check-standards.md",
-    "research/通用项目Skill框架/工作流型Skill/workflow/step3-check-security-and-performance.md",
-    "research/通用项目Skill框架/工作流型Skill/workflow/step4-compile-feedback.md",
-    "research/通用项目Skill框架/工作流型Skill/workflow/step5-final-review.md",
-    "research/通用项目Skill框架/知识库型Skill/project-intro/architecture.md",
-    "research/通用项目Skill框架/知识库型Skill/project-intro/tech-stack.md",
-    "research/通用项目Skill框架/工作流型Skill/guidelines/feedback-guidelines.md",
-    "research/通用项目Skill框架/知识库型Skill/best-practices/performance-tips.md",
-    "research/通用项目Skill框架/工作流型Skill/standards/security-checklist.md",
-    "research/通用项目Skill框架/知识库型Skill/best-practices/common-patterns.md",
-    "research/通用项目Skill框架/📑 完整文件索引.md",
     "research/通用项目Skill框架/工作流型Skill/guidelines",
     "research/通用项目Skill框架/工作流型Skill/standards",
     "research/通用项目Skill框架/工作流型Skill/workflow",
@@ -276,9 +295,6 @@
     "research/通用项目Skill框架/知识库型Skill/reference",
     "research/通用项目Skill框架/知识库型Skill/guides",
     "research/通用项目Skill框架/知识库型Skill/best-practices",
-    "research/通用项目Skill框架/知识库型Skill/standards",
-    "research/通用项目Skill框架/知识库型Skill/project-intro",
-    "research/通用项目Skill框架/知识库型Skill",
     "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/Attachments/DCC3CBEB-09FB-49C8-A3A5-4810770B43DF.jpg",
     "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/Attachments/34517C08-6BDF-4915-8371-555FDD34DCFE.jpg",
     "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/Attachments/29C547BD-5AF5-4441-959D-87C84030A6E4.png",

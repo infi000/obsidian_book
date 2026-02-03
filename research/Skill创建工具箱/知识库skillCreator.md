@@ -80,7 +80,24 @@ your-project-kb-skill/
 │   ├── new-page-template.md    新页面模板
 │   └── troubleshooting.md      故障排查
 │
-└── 📂 05_reference/
+├── 📂 05_code-examples/
+│   ├── overview.md             代码示例总览
+│   ├── standard-pages/         标准页面模板
+│   │   ├── user-profile.md
+│   │   ├── list-page.md
+│   │   ├── form-page.md
+│   │   └── detail-page.md
+│   ├── functional-modules/     功能模块代码
+│   │   ├── pagination.md
+│   │   ├── modal-dialog.md
+│   │   ├── form-validation.md
+│   │   └── api-service.md
+│   └── component-patterns/     组件模式
+│       ├── custom-hook.md
+│       ├── provider-consumer.md
+│       └── composition-pattern.md
+│
+└── 📂 06_reference/
     ├── faq.md                  常见问题
     ├── glossary.md             术语表
     └── useful-links.md         有用链接
@@ -99,7 +116,11 @@ mkdir "your-project-kb-skill/01_project-intro"
 mkdir "your-project-kb-skill/02_standards"
 mkdir "your-project-kb-skill/03_best-practices"
 mkdir "your-project-kb-skill/04_guides"
-mkdir "your-project-kb-skill/05_reference"
+mkdir "your-project-kb-skill/05_code-examples"
+mkdir "your-project-kb-skill/05_code-examples/standard-pages"
+mkdir "your-project-kb-skill/05_code-examples/functional-modules"
+mkdir "your-project-kb-skill/05_code-examples/component-patterns"
+mkdir "your-project-kb-skill/06_reference"
 
 # 3. 创建所有的 .md 文件
 ```
@@ -133,7 +154,8 @@ mkdir "your-project-kb-skill/05_reference"
 | **开发规范** | 遵循开发标准 | [[02_standards/overview\|规范总览]] |
 | **最佳实践** | 学习推荐做法 | [[03_best-practices/overview\|最佳实践]] |
 | **开发指南** | 快速上手 | [[04_guides/quick-start\|快速开始]] |
-| **参考资料** | 常见问题和术语 | [[05_reference/faq\|常见问题]] |
+| **代码示例** | 直接复制的代码模板 | [[05_code-examples/overview\|代码示例]] |
+| **参考资料** | 常见问题和术语 | [[06_reference/faq\|常见问题]] |
 
 ## 🚀 我是新人，怎么开始？
 
@@ -146,6 +168,7 @@ mkdir "your-project-kb-skill/05_reference"
 1. 看 [[02_standards/code-standards\|代码规范]]
 2. 看 [[02_standards/naming-conventions\|命名规范]]
 3. 看 [[03_best-practices/common-patterns\|常见模式]]
+4. 看 [[05_code-examples/overview\|代码示例模板]]
 ```
 
 #### 📂 01_project-intro/ - 项目的三个核心文件
@@ -371,7 +394,7 @@ project/
 - chore: 构建、依赖等
 
 **例子：**
-```
+
 feat(auth): add user login functionality
 
 - Add login form component
@@ -594,7 +617,291 @@ src/pages/YourPageName/
 [补充你团队遇到的常见问题]
 ```
 
-#### 📂 05_reference/ - 参考资料
+#### 📂 05_code-examples/ - 代码示例和模板
+
+**overview.md** - 代码示例总览
+```markdown
+# 代码示例和模板
+
+这里包含可以直接复制使用的标准页面、功能模块和组件模式代码。
+
+## 标准页面模板
+
+常见页面的完整实现示例，包含文件结构、代码和说明。
+
+| 页面类型 | 说明 |
+|---------|------|
+| [[standard-pages/user-profile\|用户档案页]] | 单个用户信息展示和编辑 |
+| [[standard-pages/list-page\|列表页]] | 数据列表展示，支持分页、搜索、排序 |
+| [[standard-pages/form-page\|表单页]] | 新增/编辑表单，包含验证和提交 |
+| [[standard-pages/detail-page\|详情页]] | 单个项目的详细信息展示 |
+
+## 功能模块代码
+
+项目中常用功能的实现代码和最佳实践。
+
+| 功能模块 | 说明 |
+|---------|------|
+| [[functional-modules/pagination\|分页功能]] | 列表分页的完整实现 |
+| [[functional-modules/modal-dialog\|模态框]] | 弹窗/对话框的标准写法 |
+| [[functional-modules/form-validation\|表单验证]] | 前端表单验证的规范方式 |
+| [[functional-modules/api-service\|API 服务]] | 数据请求的统一管理方式 |
+
+## 组件模式
+
+React 组件设计的常见模式和最佳实践。
+
+| 模式 | 说明 |
+|-----|------|
+| [[component-patterns/custom-hook\|自定义 Hook]] | 逻辑复用的最佳实践 |
+| [[component-patterns/provider-consumer\|Provider/Consumer]] | Context API 的标准用法 |
+| [[component-patterns/composition-pattern\|组件组合]] | 组件之间的组合方式 |
+```
+
+**standard-pages/user-profile.md** - 用户档案页示例
+```markdown
+# 用户档案页（User Profile Page）
+
+用户信息的查看和编辑页面。
+
+## 文件结构
+
+\`\`\`
+src/pages/UserProfile/
+├── UserProfile.tsx           # 主组件
+├── UserProfile.module.css    # 样式
+├── types.ts                  # 类型定义
+├── hooks.useUserProfile.ts   # 自定义 Hook
+├── api.ts                    # 数据服务
+└── __tests__/UserProfile.test.tsx
+\`\`\`
+
+## 完整代码示例
+
+### UserProfile.tsx
+
+\`\`\`typescript
+import React, { useState } from 'react'
+import { useUserProfile } from './hooks.useUserProfile'
+import styles from './UserProfile.module.css'
+import { UserData } from './types'
+
+interface UserProfileProps {
+  userId: string
+}
+
+export const UserProfile: React.FC<UserProfileProps> = ({ userId }) => {
+  const { user, loading, error, updateUser } = useUserProfile(userId)
+  const [isEditing, setIsEditing] = useState(false)
+  const [formData, setFormData] = useState<Partial<UserData>>({})
+
+  const handleEdit = () => {
+    setFormData(user)
+    setIsEditing(true)
+  }
+
+  const handleSave = async () => {
+    try {
+      await updateUser(formData)
+      setIsEditing(false)
+    } catch (err) {
+      console.error('更新用户信息失败:', err)
+    }
+  }
+
+  if (loading) return <div>加载中...</div>
+  if (error) return <div>错误: {error}</div>
+  if (!user) return <div>用户不存在</div>
+
+  return (
+    <div className={styles.container}>
+      <h1>用户档案</h1>
+
+      {isEditing ? (
+        <div className={styles.form}>
+          {/* 编辑表单 */}
+          <input
+            type="text"
+            value={formData.name || ''}
+            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+            placeholder="名字"
+          />
+          <button onClick={handleSave}>保存</button>
+          <button onClick={() => setIsEditing(false)}>取消</button>
+        </div>
+      ) : (
+        <div className={styles.profile}>
+          <div>名字: {user.name}</div>
+          <div>邮箱: {user.email}</div>
+          <button onClick={handleEdit}>编辑</button>
+        </div>
+      )}
+    </div>
+  )
+}
+
+export default UserProfile
+\`\`\`
+
+### types.ts
+
+\`\`\`typescript
+export interface UserData {
+  id: string
+  name: string
+  email: string
+  avatar?: string
+  bio?: string
+  createdAt: string
+  updatedAt: string
+}
+
+export interface UserProfileState {
+  user: UserData | null
+  loading: boolean
+  error: string | null
+}
+\`\`\`
+
+### hooks.useUserProfile.ts
+
+\`\`\`typescript
+import { useState, useEffect } from 'react'
+import { UserData } from './types'
+import * as api from './api'
+
+export const useUserProfile = (userId: string) => {
+  const [user, setUser] = useState<UserData | null>(null)
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      try {
+        setLoading(true)
+        const data = await api.getUserById(userId)
+        setUser(data)
+        setError(null)
+      } catch (err) {
+        setError(err instanceof Error ? err.message : '未知错误')
+        setUser(null)
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    fetchUser()
+  }, [userId])
+
+  const updateUser = async (updates: Partial<UserData>) => {
+    try {
+      const updated = await api.updateUser(userId, updates)
+      setUser(updated)
+      return updated
+    } catch (err) {
+      throw err
+    }
+  }
+
+  return { user, loading, error, updateUser }
+}
+\`\`\`
+
+## 关键要点
+
+- ✅ 分离关注：UI、Hook、API、类型分开管理
+- ✅ 错误处理：完整的错误提示
+- ✅ 加载状态：显示 loading 和 error 状态
+- ✅ 类型安全：使用 TypeScript 定义所有类型
+- ✅ 可重用：Hook 可以在其他组件中复用
+
+## 检查清单
+
+- [ ] 文件结构符合规范
+- [ ] 有完整的类型定义
+- [ ] 业务逻辑在 Hook 中
+- [ ] API 调用在 api.ts 中
+- [ ] 有错误和加载状态处理
+- [ ] 有测试文件
+\`\`\`
+
+**standard-pages/list-page.md** - 列表页示例
+```markdown
+# 列表页（List Page）
+
+数据列表展示，支持分页、搜索、排序。
+
+[类似结构的完整代码示例]
+\`\`\`
+
+**standard-pages/form-page.md** - 表单页示例
+```markdown
+# 表单页（Form Page）
+
+新增/编辑表单，包含验证和提交。
+
+[类似结构的完整代码示例]
+\`\`\`
+
+**standard-pages/detail-page.md** - 详情页示例
+```markdown
+# 详情页（Detail Page）
+
+单个项目的详细信息展示。
+
+[类似结构的完整代码示例]
+\`\`\`
+
+**functional-modules/pagination.md** - 分页功能
+```markdown
+# 分页功能实现
+
+[分页功能的完整实现代码]
+\`\`\`
+
+**functional-modules/modal-dialog.md** - 模态框
+```markdown
+# 模态框组件
+
+[模态框的完整实现代码]
+\`\`\`
+
+**functional-modules/form-validation.md** - 表单验证
+```markdown
+# 表单验证规范
+
+[表单验证的完整实现代码]
+\`\`\`
+
+**functional-modules/api-service.md** - API 服务
+```markdown
+# API 服务管理
+
+[API 服务的完整实现代码]
+\`\`\`
+
+**component-patterns/custom-hook.md** - 自定义 Hook
+```markdown
+# 自定义 Hook 模式
+
+[自定义 Hook 的最佳实践]
+\`\`\`
+
+**component-patterns/provider-consumer.md** - Provider/Consumer
+```markdown
+# Provider/Consumer 模式
+
+[Context API 的标准用法]
+\`\`\`
+
+**component-patterns/composition-pattern.md** - 组件组合
+```markdown
+# 组件组合模式
+
+[组件组合的最佳实践]
+\`\`\`
+
+#### 📂 06_reference/ - 参考资料
 
 **overview.md** - 参考资料总览
 ```markdown
@@ -614,10 +921,10 @@ src/pages/YourPageName/
 # 常见问题
 
 ## Q: 如何快速上手项目？
-A: 请先看 [[04_开发指南/quick-start|快速开始]]。
+A: 请先看 [[04_guides/quick-start|快速开始]]。
 
 ## Q: 代码风格有什么要求？
-A: 请看 [[02_开发规范/code-standards|代码规范]]。
+A: 请看 [[02_standards/code-standards|代码规范]]。
 
 [补充你项目特有的常见问题]
 ```
@@ -653,6 +960,7 @@ A: 请看 [[02_开发规范/code-standards|代码规范]]。
 - [ ] **项目介绍** 三个文件都写了（overview、architecture、tech-stack）
 - [ ] **开发规范** 至少有 code-standards 和 naming-conventions
 - [ ] **开发指南** 至少有 quick-start 和 dev-environment
+- [ ] **代码示例** 至少有 1 个标准页面模板和 2 个功能模块示例
 - [ ] **所有链接** 都是正确的（使用 wikilink [[文件]])
 - [ ] **没有废话** 内容精准有用
 - [ ] **举了例子** 规范都有具体例子说明
