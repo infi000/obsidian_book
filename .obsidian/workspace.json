@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "88a7f593fac878d7",
+        "id": "22a8f93c85b8c2fd",
         "type": "tabs",
         "children": [
           {
-            "id": "a9d7c9ecbba9b5a6",
+            "id": "a0295abc1008ddfb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "skills/README.md",
+                "file": "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/Skill 示例 1 - 知识库型/guides/git-workflow.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "git-workflow"
             }
           }
         ]
@@ -241,8 +241,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "78b74d0792f5b66b",
+  "active": "a0295abc1008ddfb",
   "lastOpenFiles": [
+    "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/正文.md",
+    "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/📋 结构梳理.md",
+    "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/📋 Skill 示例总结.md",
+    "skills/README.md",
     "每日记录/2026-02-03.md",
     "每日记录/2026-02-02.md",
     "每日记录/2026-01-30.md",
@@ -261,8 +265,6 @@
     "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/Skill 示例 1 - 知识库型/standards/naming-conventions.md",
     "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/Skill 示例 1 - 知识库型/standards/code-style.md",
     "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/📑 完整文件索引.md",
-    "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/📋 Skill 示例总结.md",
-    "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/📋 结构梳理.md",
     "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/Skill 示例 1 - 知识库型/reference/faq.md",
     "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/Skill 示例 2 - 工作流型/rules",
     "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/Skill 示例 2 - 工作流型/standards",
@@ -276,8 +278,6 @@
     "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/Skill 示例 1 - 知识库型/SKILL.md",
     "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/Skill 示例 1 - 知识库型",
     "output",
-    "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/正文.md",
-    "research/11.md",
     "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/Attachments/DCC3CBEB-09FB-49C8-A3A5-4810770B43DF.jpg",
     "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/Attachments/34517C08-6BDF-4915-8371-555FDD34DCFE.jpg",
     "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/Attachments/29C547BD-5AF5-4441-959D-87C84030A6E4.png",
