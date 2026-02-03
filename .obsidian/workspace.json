@@ -48,9 +48,65 @@
               "icon": "lucide-file",
               "title": "工作流skillCreator"
             }
+          },
+          {
+            "id": "b4e4f08f57152c29",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "research/Skill创建工具箱/CodeReview-工作流Skill/SKILL.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SKILL"
+            }
+          },
+          {
+            "id": "8162176e161cd206",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "research/Skill创建工具箱/工作流skillCreator.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "工作流skillCreator"
+            }
+          },
+          {
+            "id": "e3d0606faa1015c3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "research/Skill创建工具箱/CodeReview-工作流Skill/SKILL.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SKILL"
+            }
+          },
+          {
+            "id": "65bfc42f656b079b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/📋 结构梳理.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "📋 结构梳理"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -107,8 +163,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 430.5124969482422,
-    "collapsed": true
+    "width": 430.5124969482422
   },
   "right": {
     "id": "2e43719cbbe6af2e",
@@ -252,7 +307,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 745.5
+    "width": 677.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -271,44 +326,44 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "5439dbeffc6faa21",
+  "active": "65bfc42f656b079b",
   "lastOpenFiles": [
-    "research/Skill创建工具箱/知识库skillCreator.md",
+    "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/🚀 快速开始指南.md",
+    "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/📑 完整文件索引.md",
+    "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/🎉 项目完成总结.md",
+    "research/Skill创建工具箱.md",
+    "research/Skill创建工具箱/CodeReview-工作流Skill/guidelines/overview.md",
+    "research/Skill创建工具箱/CodeReview-工作流Skill/guidelines/severity-levels.md",
+    "research/Skill创建工具箱/CodeReview-工作流Skill/guidelines/feedback-guidelines.md",
+    "research/Skill创建工具箱/CodeReview-工作流Skill/SKILL.md",
     "research/Skill创建工具箱/工作流skillCreator.md",
+    "research/Skill创建工具箱/CodeReview-工作流Skill/templates/examples.md",
+    "research/Skill创建工具箱/CodeReview-工作流Skill/templates/feedback-template.md",
+    "research/Skill创建工具箱/CodeReview-工作流Skill/templates",
+    "research/Skill创建工具箱/CodeReview-工作流Skill/guidelines",
+    "research/Skill创建工具箱/CodeReview-工作流Skill/standards/step5-checklist.md",
+    "research/Skill创建工具箱/CodeReview-工作流Skill/standards/step4-checklist.md",
+    "research/Skill创建工具箱/CodeReview-工作流Skill/standards/step3-checklist.md",
+    "research/Skill创建工具箱/CodeReview-工作流Skill/standards/step2-checklist.md",
+    "research/Skill创建工具箱/CodeReview-工作流Skill/standards/step1-checklist.md",
+    "research/Skill创建工具箱/CodeReview-工作流Skill/standards",
+    "research/Skill创建工具箱/CodeReview-工作流Skill/workflow/step5-compile-feedback.md",
+    "research/Skill创建工具箱/CodeReview-工作流Skill/workflow/step4-check-impact.md",
+    "research/Skill创建工具箱/CodeReview-工作流Skill/workflow/step3-check-logic.md",
+    "research/Skill创建工具箱/CodeReview-工作流Skill/workflow/step2-check-standards.md",
+    "research/Skill创建工具箱/CodeReview-工作流Skill/workflow/step1-understand-requirement.md",
+    "research/Skill创建工具箱/CodeReview-工作流Skill/workflow",
+    "research/Skill创建工具箱/CodeReview-工作流Skill",
+    "research/Skill创建工具箱/知识库skillCreator.md",
     "research/Skill创建工具箱/Skill创建指南.md",
     "每日记录/2026-02-03.md",
     "research/Skill创建工具箱/知识库Skill生成器.md",
     "research/Skill创建工具箱/知识库skillCreator_副本.md",
-    "research/Skill创建工具箱.md",
-    "每日记录/2026-01-30.md",
-    "每日记录/2026-02-02.md",
-    "research/知识库Skill生成器.md",
-    "research/知识库skillCreator.md",
     "research/Skill创建工具箱",
-    "research/通用项目Skill框架/知识库型Skill/project-intro/overview.md",
-    "research/通用项目Skill框架/📑 完整文件索引.md",
-    "research/通用项目Skill框架/🎉 项目完成总结.md",
-    "research/通用项目Skill框架/Skill生成器.md",
-    "research/通用项目Skill框架/知识库型Skill/project-intro/tech-stack.md",
-    "prompt/README.md",
-    "prompt/Prompt生成器-标准格式.md",
     "未命名 3.base",
     "未命名 2.base",
-    "research/知识库skillCreator_副本.md",
-    "research/Skill创建指南.md",
-    "research/通用项目Skill框架/使用Skill生成器.md",
-    "skills/README.md",
-    "research/项目Skill自动生成器.md",
-    "research/CodeReview_Skill生成器.md",
-    "research/通用项目Skill框架/知识库型Skill/SKILL.md",
-    "research/通用项目Skill框架/工作流型Skill/SKILL.md",
     "research/通用项目Skill框架/工作流型Skill/guidelines",
     "research/通用项目Skill框架/工作流型Skill/standards",
-    "research/通用项目Skill框架/工作流型Skill/workflow",
-    "research/通用项目Skill框架/工作流型Skill",
-    "research/通用项目Skill框架/知识库型Skill/reference",
-    "research/通用项目Skill框架/知识库型Skill/guides",
-    "research/通用项目Skill框架/知识库型Skill/best-practices",
     "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/Attachments/DCC3CBEB-09FB-49C8-A3A5-4810770B43DF.jpg",
     "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/Attachments/34517C08-6BDF-4915-8371-555FDD34DCFE.jpg",
     "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/Attachments/29C547BD-5AF5-4441-959D-87C84030A6E4.png",
