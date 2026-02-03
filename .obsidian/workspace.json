@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "每日记录/2026-02-02.md",
+                "file": "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/正文.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-02-02"
+              "title": "正文"
+            }
+          },
+          {
+            "id": "0afdd31707cc3049",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/📋 结构梳理.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "📋 结构梳理"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -241,12 +256,28 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "8f3b557f5aa496f4",
+  "active": "78b74d0792f5b66b",
   "lastOpenFiles": [
+    "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/Skill 示例 1 - 知识库型/standards/code-style.md",
+    "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/Skill 示例 1 - 知识库型/standards",
+    "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/Skill 示例 1 - 知识库型/SKILL.md",
+    "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/Skill 示例 1 - 知识库型",
+    "output",
+    "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/正文.md",
+    "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/📋 结构梳理.md",
+    "research/11.md",
+    "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/Attachments/DCC3CBEB-09FB-49C8-A3A5-4810770B43DF.jpg",
+    "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/Attachments/34517C08-6BDF-4915-8371-555FDD34DCFE.jpg",
+    "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/Attachments/29C547BD-5AF5-4441-959D-87C84030A6E4.png",
+    "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/Attachments/05920D22-EC53-4310-8F60-DFF8EB31E5D3.jpg",
+    "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/Attachments/03C334AD-1FEC-4DE2-B862-A798154BAD08.jpg",
+    "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/Attachments",
+    "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）",
+    "skills/README.md",
+    "每日记录/2026-02-02.md",
     "个人记录/瞎聊",
     "个人记录",
     "模板文件夹/日记模板.md",
-    "每日记录/2026-02-02.md",
     "每日记录/2026-01-30.md",
     "汇报总结/AI体系化建设/📁 第2-2层：标准项目结构模板.md",
     "汇报总结/AI体系化建设/📦 第2层：官方标准沉淀体系.md",
@@ -267,33 +298,17 @@
     "未命名 1.md",
     "cr记录.md",
     "每日记录/2026-01-28.md",
-    "临时笔记.md",
     "assets/cr记录/82c491152ec5f52d295fbfe911241cce__055cf74dbdf065e3e83fe6a21bcddf84.png",
     "assets/cr记录",
     "assets/临时笔记/82c491152ec5f52d295fbfe911241cce__055cf74dbdf065e3e83fe6a21bcddf84 1.png",
     "assets/临时笔记/82c491152ec5f52d295fbfe911241cce__055cf74dbdf065e3e83fe6a21bcddf84.png",
     "assets/临时笔记",
-    "assets",
-    "每日归档使用指南.md",
-    "灵感记录.md",
     "前端工程化9月目标脑图.canvas",
     "Pasted image 20260126151135.png",
-    "obsidian_book",
-    "未命名 1.base",
-    "未命名看板.md",
-    "未命名看板 1.md",
-    "微创新评审/评审文件",
-    "微创新评审",
-    "11728b8b3da3ba03b3d3d9ec3e6470c9__383060c429322385427c7babbf473ebc.png",
-    "页面加载性能优化方案及实现指南.docx",
     "迭代报告Agent/迭代报告Agent-数据流转图.canvas",
     "迭代报告Agent/迭代报告Agent-核心工作流程.canvas",
     "迭代报告Agent/迭代报告Agent-架构图.canvas",
-    "Pasted image 20260126151209.png",
-    "Pasted image 20260126150615.png",
-    "Pasted image 20260122140842.png",
     "每日记录/未命名.canvas",
-    "984b01c554f3c1e665debd20a1f1ecf7__f381b5dc-9708-4909-913b-a9e2af17c345.jpg",
     "技术学习文档/gemini-cli/CLI-命令系统.canvas",
     "未命名.canvas",
     "未命名 1.canvas"
