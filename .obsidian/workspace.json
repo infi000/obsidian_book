@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "22a8f93c85b8c2fd",
+        "id": "0c3caed0b9c15447",
         "type": "tabs",
         "children": [
           {
-            "id": "a0295abc1008ddfb",
+            "id": "803fa842f8ca7707",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "research/通用项目Skill框架/知识库型Skill/best-practices/performance-tips.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "performance-tips"
+              "title": "新标签页"
             }
           }
         ]
@@ -222,7 +218,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 794.5
+    "width": 745.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -241,39 +237,39 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "a0295abc1008ddfb",
+  "active": "78b74d0792f5b66b",
   "lastOpenFiles": [
-    "research/通用项目Skill框架/工作流型Skill/standards/security-checklist.md",
-    "research/通用项目Skill框架/工作流型Skill/workflow/step5-final-review.md",
-    "research/通用项目Skill框架/工作流型Skill/SKILL.md",
-    "research/通用项目Skill框架/知识库型Skill/best-practices/common-patterns.md",
-    "research/通用项目Skill框架/🎉 项目完成总结.md",
-    "research/通用项目Skill框架/📑 完整文件索引.md",
-    "research/通用项目Skill框架/工作流型Skill/guidelines/feedback-guidelines.md",
-    "research/通用项目Skill框架/工作流型Skill/guidelines",
-    "research/通用项目Skill框架/知识库型Skill/best-practices/performance-tips.md",
-    "research/通用项目Skill框架/知识库型Skill/best-practices/security-checklist.md",
-    "research/通用项目Skill框架/知识库型Skill/guides/new-page-template.md",
+    "research/知识库skillCreator.md",
+    "research/Skill创建指南.md",
+    "research/知识库Skill生成器.md",
+    "research/通用项目Skill框架/使用Skill生成器.md",
+    "research/通用项目Skill框架/Skill生成器.md",
+    "skills/README.md",
+    "research/项目Skill自动生成器.md",
+    "research/CodeReview_Skill生成器.md",
     "research/通用项目Skill框架/知识库型Skill/project-intro/overview.md",
+    "research/通用项目Skill框架/知识库型Skill/SKILL.md",
+    "research/通用项目Skill框架/工作流型Skill/SKILL.md",
+    "research/通用项目Skill框架/🎉 项目完成总结.md",
+    "research/通用项目Skill框架/工作流型Skill/workflow/step1-understand-context.md",
+    "research/通用项目Skill框架/工作流型Skill/workflow/step2-check-standards.md",
+    "research/通用项目Skill框架/工作流型Skill/workflow/step3-check-security-and-performance.md",
+    "research/通用项目Skill框架/工作流型Skill/workflow/step4-compile-feedback.md",
+    "research/通用项目Skill框架/工作流型Skill/workflow/step5-final-review.md",
     "research/通用项目Skill框架/知识库型Skill/project-intro/architecture.md",
     "research/通用项目Skill框架/知识库型Skill/project-intro/tech-stack.md",
-    "research/通用项目Skill框架/知识库型Skill/reference/faq.md",
-    "research/通用项目Skill框架/知识库型Skill/reference/troubleshooting.md",
-    "research/通用项目Skill框架/知识库型Skill/standards/code-standards.md",
-    "research/通用项目Skill框架/知识库型Skill/standards/file-structure.md",
-    "research/通用项目Skill框架/工作流型Skill/standards/code-quality-checklist.md",
+    "research/通用项目Skill框架/工作流型Skill/guidelines/feedback-guidelines.md",
+    "research/通用项目Skill框架/知识库型Skill/best-practices/performance-tips.md",
+    "research/通用项目Skill框架/工作流型Skill/standards/security-checklist.md",
+    "research/通用项目Skill框架/知识库型Skill/best-practices/common-patterns.md",
+    "research/通用项目Skill框架/📑 完整文件索引.md",
+    "research/通用项目Skill框架/工作流型Skill/guidelines",
+    "research/通用项目Skill框架/知识库型Skill/best-practices/security-checklist.md",
+    "research/通用项目Skill框架/知识库型Skill/guides/new-page-template.md",
     "research/通用项目Skill框架/工作流型Skill/standards",
-    "research/通用项目Skill框架/知识库型Skill/standards/git-workflow.md",
-    "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/Skill 示例 1 - 知识库型/guides/git-workflow.md",
-    "research/通用项目Skill框架/工作流型Skill/workflow/step4-compile-feedback.md",
-    "research/通用项目Skill框架/工作流型Skill/workflow/step3-check-security-and-performance.md",
-    "research/通用项目Skill框架/工作流型Skill/workflow/step2-check-standards.md",
-    "research/通用项目Skill框架/工作流型Skill/workflow/step1-understand-context.md",
     "research/通用项目Skill框架/工作流型Skill/workflow",
     "research/通用项目Skill框架/工作流型Skill",
     "research/通用项目Skill框架/知识库型Skill/reference",
-    "research/通用项目Skill框架/知识库型Skill/guides/dev-environment.md",
-    "research/通用项目Skill框架/知识库型Skill/guides/quick-start.md",
     "research/通用项目Skill框架/知识库型Skill/guides",
     "research/通用项目Skill框架/知识库型Skill/best-practices",
     "research/通用项目Skill框架/知识库型Skill/standards",
