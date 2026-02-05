@@ -225,7 +225,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 411.5
+    "width": 556.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -244,7 +244,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b68e752faa8f087e",
+  "active": "78b74d0792f5b66b",
   "lastOpenFiles": [
     "临时_每日删除/projectInfo/SKILL.md",
     "临时_每日删除/projectInfo/dimension-02-standards.md",
