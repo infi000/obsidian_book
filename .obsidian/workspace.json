@@ -15,9 +15,9 @@
               "state": {
                 "file": "临时_每日删除/projectInfo-架构图.canvas",
                 "viewState": {
-                  "x": 598.896812154052,
-                  "y": 671.5941056844039,
-                  "zoom": -0.3521717281371562
+                  "x": 580,
+                  "y": 580,
+                  "zoom": -0.5179838009924104
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -244,17 +244,18 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "78b74d0792f5b66b",
+  "active": "b68e752faa8f087e",
   "lastOpenFiles": [
+    "临时_每日删除/projectInfo/SKILL.md",
+    "临时_每日删除/projectInfo/dimension-02-standards.md",
+    "临时_每日删除/projectInfo/dimension-04-guides.md",
+    "临时_每日删除/projectInfo/dimension-05-examples.md",
     "临时_每日删除/projectInfo/dimension-07-ai.md",
     "临时_每日删除/projectInfo/dimension-06-reference.md",
-    "临时_每日删除/projectInfo/dimension-05-examples.md",
-    "临时_每日删除/projectInfo/dimension-04-guides.md",
-    "临时_每日删除/projectInfo/dimension-03-practices.md",
-    "临时_每日删除/projectInfo/dimension-02-standards.md",
-    "临时_每日删除/projectInfo/dimension-01-intro.md",
-    "临时_每日删除/projectInfo-知识库管理.base",
     "临时_每日删除/projectInfo-架构图.canvas",
+    "临时_每日删除/projectInfo/dimension-03-practices.md",
+    "临时_每日删除/projectInfo-知识库管理.base",
+    "临时_每日删除/projectInfo/dimension-01-intro.md",
     "临时_每日删除/projectInfo/03_best-practices-guide/templates/security-guidelines.md",
     "临时_每日删除/projectInfo/03_best-practices-guide/templates/performance-tips.md",
     "临时_每日删除/projectInfo/03_best-practices-guide/templates/overview.md",
@@ -271,14 +272,12 @@
     "临时_每日删除/projectInfo/02_standards-guide/templates",
     "临时_每日删除/projectInfo/02_standards-guide/GUIDE.md",
     "临时_每日删除/projectInfo/02_standards-guide",
-    "临时_每日删除/projectInfo/SKILL.md",
     "临时_每日删除/projectInfo/04_guides-guide/templates/troubleshooting.md",
     "临时_每日删除/projectInfo/04_guides-guide/templates/quick-start.md",
     "临时_每日删除/projectInfo/04_guides-guide/templates/overview.md",
     "临时_每日删除/projectInfo/04_guides-guide/templates/new-page-template.md",
     "临时_每日删除/projectInfo/04_guides-guide/templates/dev-environment.md",
     "临时_每日删除/projectInfo/04_guides-guide/templates",
-    "临时_每日删除/projectInfo/04_guides-guide/GUIDE.md",
     "临时_每日删除/projectInfo/04_guides-guide",
     "临时_每日删除/projectInfo/07_ai-development-guide/templates/WORKFLOW模板.yaml",
     "临时_每日删除/projectInfo/07_ai-development-guide/templates",

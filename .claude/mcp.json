@@ -1,28 +1,20 @@
 {
   "mcpServers": {
     "sfdoc": {
-      "command": "{",
+      "command": "npx",
       "args": [
-        "sfdoc-mcp:",
-        "{",
-        "command:",
-        "npx,",
-        "args:",
-        "[",
-        "-y,",
-        "@sf/sfdoc-mcp",
-        "],",
-        "env:",
-        "{",
-        "NPM_CONFIG_REGISTRY:",
-        "https://artifactory.sf-express.com/artifactory/api/npm/npm/",
-        "}",
-        "}",
-        "}"
+        "-y",
+        "@sf/sfdoc-mcp"
       ],
       "env": {
         "NPM_CONFIG_REGISTRY": "https://artifactory.sf-express.com/artifactory/api/npm/npm/"
       }
+    },
+    "mytest": {
+      "command": "node",
+      "args": [
+        "/Users/01389450/Desktop/qoder_workspace/mcp-fsdocs/dist/index.js"
+      ]
     }
   }
 }
