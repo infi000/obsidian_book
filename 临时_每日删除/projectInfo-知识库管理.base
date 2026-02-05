@@ -1,0 +1,84 @@
+# Obsidian Bases Configuration for Project Knowledge Library
+
+filters:
+  and:
+    - file.inFolder("临时_每日删除/projectInfo")
+
+formulas:
+  dimension_emoji: |
+    if(dimension_number == 1, "🎯",
+    if(dimension_number == 2, "📝",
+    if(dimension_number == 3, "🚀",
+    if(dimension_number == 4, "📖",
+    if(dimension_number == 5, "💡",
+    if(dimension_number == 6, "📚",
+    if(dimension_number == 7, "🤖", "❓")))))))
+
+  content_summary: |
+    if(file.basename == "GUIDE", "完整指南已撰写", "待完善")
+
+  status_icon: |
+    if(status == "completed", "✅",
+    if(status == "in-progress", "⏳", "📌"))
+
+properties:
+  dimension_number:
+    displayName: "序号"
+  dimension_name:
+    displayName: "维度名称"
+  formula.dimension_emoji:
+    displayName: "📍"
+  purpose:
+    displayName: "目标"
+  when_to_review:
+    displayName: "何时查阅"
+  formula.content_summary:
+    displayName: "内容"
+  status:
+    displayName: "状态"
+  formula.status_icon:
+    displayName: "进度"
+
+views:
+  - type: table
+    name: "📊 维度总览"
+    order:
+      - formula.dimension_emoji
+      - dimension_number
+      - dimension_name
+      - purpose
+      - formula.status_icon
+      - when_to_review
+    groupBy:
+      property: status
+      direction: ASC
+    summaries:
+      dimension_number: Sum
+
+  - type: cards
+    name: "🎨 维度卡片库"
+    order:
+      - formula.dimension_emoji
+      - dimension_name
+      - purpose
+      - when_to_review
+      - file.name
+
+  - type: table
+    name: "✅ 完成度跟踪"
+    order:
+      - dimension_number
+      - dimension_name
+      - formula.status_icon
+      - last_updated
+      - formula.content_summary
+    filters:
+      not:
+        - 'status == "archived"'
+
+  - type: list
+    name: "📋 快速查询"
+    order:
+      - dimension_name
+      - when_to_review
+      - purpose

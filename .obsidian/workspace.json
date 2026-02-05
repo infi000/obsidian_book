@@ -11,10 +11,17 @@
             "id": "b68e752faa8f087e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
+              "type": "canvas",
+              "state": {
+                "file": "临时_每日删除/projectInfo-架构图.canvas",
+                "viewState": {
+                  "x": 598.896812154052,
+                  "y": 671.5941056844039,
+                  "zoom": -0.3521717281371562
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "projectInfo-架构图"
             }
           }
         ]
@@ -218,7 +225,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 677.5
+    "width": 411.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -239,6 +246,14 @@
   },
   "active": "78b74d0792f5b66b",
   "lastOpenFiles": [
+    "临时_每日删除/projectInfo/dimension-07-ai.md",
+    "临时_每日删除/projectInfo/dimension-06-reference.md",
+    "临时_每日删除/projectInfo/dimension-05-examples.md",
+    "临时_每日删除/projectInfo/dimension-04-guides.md",
+    "临时_每日删除/projectInfo/dimension-03-practices.md",
+    "临时_每日删除/projectInfo/dimension-02-standards.md",
+    "临时_每日删除/projectInfo/dimension-01-intro.md",
+    "临时_每日删除/projectInfo-知识库管理.base",
     "临时_每日删除/projectInfo-架构图.canvas",
     "临时_每日删除/projectInfo/03_best-practices-guide/templates/security-guidelines.md",
     "临时_每日删除/projectInfo/03_best-practices-guide/templates/performance-tips.md",
@@ -266,15 +281,8 @@
     "临时_每日删除/projectInfo/04_guides-guide/GUIDE.md",
     "临时_每日删除/projectInfo/04_guides-guide",
     "临时_每日删除/projectInfo/07_ai-development-guide/templates/WORKFLOW模板.yaml",
-    "临时_每日删除/projectInfo/07_ai-development-guide/templates/SKILL模板.md",
-    "临时_每日删除/projectInfo/07_ai-development-guide/templates/SFCODE模板.md",
-    "临时_每日删除/projectInfo/07_ai-development-guide/templates/AGENTS模板.md",
-    "临时_每日删除/projectInfo/07_ai-development-guide/references/workflow-standards.md",
-    "临时_每日删除/projectInfo/07_ai-development-guide/references/skill-standards.md",
-    "临时_每日删除/projectInfo/07_ai-development-guide/references/public-skills-library.md",
     "临时_每日删除/projectInfo/07_ai-development-guide/templates",
     "临时_每日删除/projectInfo/07_ai-development-guide/references",
-    "临时_每日删除/projectInfo/07_ai-development-guide",
     "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/Attachments/DCC3CBEB-09FB-49C8-A3A5-4810770B43DF.jpg",
     "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/Attachments/34517C08-6BDF-4915-8371-555FDD34DCFE.jpg",
     "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/Attachments/29C547BD-5AF5-4441-959D-87C84030A6E4.png",

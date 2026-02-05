@@ -1,252 +1,33 @@
 {
-  "nodes": [
-    {
-      "id": "center_hub_knowledge",
-      "type": "text",
-      "x": 400,
-      "y": 250,
-      "width": 280,
-      "height": 140,
-      "text": "# 📚 项目知识库\n\n7维度完整体系\n\n帮助团队快速上手\n和规范开发流程",
-      "color": "5"
-    },
-    {
-      "id": "dim01_project_intro",
-      "type": "text",
-      "x": 100,
-      "y": 50,
-      "width": 240,
-      "height": 120,
-      "text": "### 1️⃣ 项目介绍\n\n- 项目概述\n- 架构设计\n- 技术栈",
-      "color": "4"
-    },
-    {
-      "id": "dim02_standards",
-      "type": "text",
-      "x": 50,
-      "y": 250,
-      "width": 240,
-      "height": 140,
-      "text": "### 2️⃣ 开发规范\n\n- 代码规范\n- 命名规范\n- 文件结构\n- Git规范",
-      "color": "1"
-    },
-    {
-      "id": "dim03_best_practices",
-      "type": "text",
-      "x": 100,
-      "y": 500,
-      "width": 240,
-      "height": 140,
-      "text": "### 3️⃣ 最佳实践\n\n- 常见模式\n- 性能优化\n- 安全指南",
-      "color": "2"
-    },
-    {
-      "id": "dim04_guides",
-      "type": "text",
-      "x": 420,
-      "y": 680,
-      "width": 240,
-      "height": 140,
-      "text": "### 4️⃣ 开发指南\n\n- 快速开始\n- 环境配置\n- 新页面模板\n- 故障排查",
-      "color": "3"
-    },
-    {
-      "id": "dim05_code_examples",
-      "type": "text",
-      "x": 800,
-      "y": 500,
-      "width": 240,
-      "height": 140,
-      "text": "### 5️⃣ 代码示例\n\n- 页面模板\n- 功能模块\n- 组件模式",
-      "color": "2"
-    },
-    {
-      "id": "dim06_reference",
-      "type": "text",
-      "x": 850,
-      "y": 250,
-      "width": 240,
-      "height": 140,
-      "text": "### 6️⃣ 参考资料\n\n- FAQ\n- 术语表\n- 有用链接",
-      "color": "1"
-    },
-    {
-      "id": "dim07_ai_guide",
-      "type": "text",
-      "x": 750,
-      "y": 50,
-      "width": 240,
-      "height": 140,
-      "text": "### 7️⃣ AI开发指南\n\n- AI工具配置\n- 技能管理\n- 工作流规范",
-      "color": "6"
-    },
-    {
-      "id": "path_newbie",
-      "type": "group",
-      "x": -50,
-      "y": 0,
-      "width": 500,
-      "height": 200,
-      "label": "👤 新成员入门路径",
-      "color": "4"
-    },
-    {
-      "id": "path_coding",
-      "type": "group",
-      "x": 50,
-      "y": 420,
-      "width": 500,
-      "height": 260,
-      "label": "💻 编码开发路径",
-      "color": "1"
-    },
-    {
-      "id": "path_ai_dev",
-      "type": "group",
-      "x": 700,
-      "y": 0,
-      "width": 300,
-      "height": 200,
-      "label": "🤖 AI开发路径",
-      "color": "6"
-    },
-    {
-      "id": "path_support",
-      "type": "group",
-      "x": 700,
-      "y": 220,
-      "width": 300,
-      "height": 300,
-      "label": "📖 参考&支持",
-      "color": "5"
-    }
-  ],
-  "edges": [
-    {
-      "id": "edge_01_to_center",
-      "fromNode": "dim01_project_intro",
-      "fromSide": "bottom",
-      "toNode": "center_hub_knowledge",
-      "toSide": "top",
-      "label": "了解项目",
-      "color": "4"
-    },
-    {
-      "id": "edge_02_to_center",
-      "fromNode": "dim02_standards",
-      "fromSide": "right",
-      "toNode": "center_hub_knowledge",
-      "toSide": "left",
-      "label": "规范编码",
-      "color": "1"
-    },
-    {
-      "id": "edge_03_to_center",
-      "fromNode": "dim03_best_practices",
-      "fromSide": "top",
-      "toNode": "center_hub_knowledge",
-      "toSide": "bottom",
-      "label": "优化方案",
-      "color": "2"
-    },
-    {
-      "id": "edge_04_to_center",
-      "fromNode": "dim04_guides",
-      "fromSide": "top",
-      "toNode": "center_hub_knowledge",
-      "toSide": "bottom",
-      "label": "快速上手",
-      "color": "3"
-    },
-    {
-      "id": "edge_05_to_center",
-      "fromNode": "dim05_code_examples",
-      "fromSide": "top",
-      "toNode": "center_hub_knowledge",
-      "toSide": "bottom",
-      "label": "代码参考",
-      "color": "2"
-    },
-    {
-      "id": "edge_06_to_center",
-      "fromNode": "dim06_reference",
-      "fromSide": "left",
-      "toNode": "center_hub_knowledge",
-      "toSide": "right",
-      "label": "查询帮助",
-      "color": "1"
-    },
-    {
-      "id": "edge_07_to_center",
-      "fromNode": "dim07_ai_guide",
-      "fromSide": "bottom",
-      "toNode": "center_hub_knowledge",
-      "toSide": "top",
-      "label": "AI赋能",
-      "color": "6"
-    },
-    {
-      "id": "edge_01_to_02",
-      "fromNode": "dim01_project_intro",
-      "fromSide": "bottom",
-      "toNode": "dim02_standards",
-      "toSide": "top",
-      "label": "理解后学习规范",
-      "toEnd": "arrow"
-    },
-    {
-      "id": "edge_02_to_05",
-      "fromNode": "dim02_standards",
-      "fromSide": "right",
-      "toNode": "dim05_code_examples",
-      "toSide": "left",
-      "label": "参考代码",
-      "toEnd": "arrow"
-    },
-    {
-      "id": "edge_05_to_03",
-      "fromNode": "dim05_code_examples",
-      "fromSide": "bottom",
-      "toNode": "dim03_best_practices",
-      "toSide": "right",
-      "label": "深化学习",
-      "toEnd": "arrow"
-    },
-    {
-      "id": "edge_02_to_04",
-      "fromNode": "dim02_standards",
-      "fromSide": "bottom",
-      "toNode": "dim04_guides",
-      "toSide": "left",
-      "label": "遵循规范",
-      "toEnd": "arrow"
-    },
-    {
-      "id": "edge_04_to_06",
-      "fromNode": "dim04_guides",
-      "fromSide": "right",
-      "toNode": "dim06_reference",
-      "toSide": "bottom",
-      "label": "遇到问题查FAQ",
-      "toEnd": "arrow"
-    },
-    {
-      "id": "edge_01_to_07",
-      "fromNode": "dim01_project_intro",
-      "fromSide": "right",
-      "toNode": "dim07_ai_guide",
-      "toSide": "left",
-      "label": "配置AI工具",
-      "toEnd": "arrow"
-    },
-    {
-      "id": "edge_07_to_04",
-      "fromNode": "dim07_ai_guide",
-      "fromSide": "bottom",
-      "toNode": "dim04_guides",
-      "toSide": "right",
-      "label": "AI辅助开发",
-      "toEnd": "arrow"
-    }
-  ]
+	"nodes":[
+		{"id":"path_coding","type":"group","x":50,"y":420,"width":500,"height":260,"color":"1","label":"💻 编码开发路径"},
+		{"id":"path_newbie","type":"group","x":-300,"y":0,"width":500,"height":200,"color":"4","label":"👤 新成员入门路径"},
+		{"id":"path_support","type":"group","x":700,"y":220,"width":300,"height":300,"color":"5","label":"📖 参考&支持"},
+		{"id":"path_ai_dev","type":"group","x":700,"y":0,"width":300,"height":200,"color":"6","label":"🤖 AI开发路径"},
+		{"id":"59142c3d12ba2507","x":253,"y":432,"width":250,"height":60,"type":"text","text":""},
+		{"id":"dim06_reference","type":"text","text":"### 6️⃣ 参考资料\n\n- FAQ\n- 术语表\n- 有用链接","x":1060,"y":580,"width":240,"height":140,"color":"1"},
+		{"id":"dim04_guides","type":"text","text":"### 4️⃣ 开发指南\n\n- 快速开始\n- 环境配置\n- 新页面模板\n- 故障排查","x":-30,"y":970,"width":240,"height":140,"color":"3"},
+		{"id":"center_hub_knowledge","type":"text","text":"# 📚 项目知识库\n\n7维度完整体系\n\n帮助团队快速上手\n和规范开发流程","x":640,"y":700,"width":280,"height":140,"color":"5"},
+		{"id":"dim03_best_practices","type":"text","text":"### 3️⃣ 最佳实践\n\n- 常见模式\n- 性能优化\n- 安全指南","x":1220,"y":1080,"width":240,"height":140,"color":"2"},
+		{"id":"dim07_ai_guide","type":"text","text":"### 7️⃣ AI开发指南\n\n- AI工具配置\n- 技能管理\n- 工作流规范","x":1080,"y":-30,"width":240,"height":140,"color":"6"},
+		{"id":"dim05_code_examples","type":"text","text":"### 5️⃣ 代码示例\n\n- 页面模板\n- 功能模块\n- 组件模式","x":400,"y":-60,"width":240,"height":140,"color":"2"},
+		{"id":"dim02_standards","type":"text","text":"### 2️⃣ 开发规范\n\n- 代码规范\n- 命名规范\n- 文件结构\n- Git规范","x":-260,"y":540,"width":240,"height":140,"color":"1"},
+		{"id":"dim01_project_intro","type":"text","text":"### 1️⃣ 项目介绍\n\n- 项目概述\n- 架构设计\n- 技术栈","x":-200,"y":320,"width":240,"height":120,"color":"4"}
+	],
+	"edges":[
+		{"id":"edge_01_to_center","fromNode":"dim01_project_intro","fromSide":"bottom","toNode":"center_hub_knowledge","toSide":"top","color":"4","label":"了解项目"},
+		{"id":"edge_02_to_center","fromNode":"dim02_standards","fromSide":"right","toNode":"center_hub_knowledge","toSide":"left","color":"1","label":"规范编码"},
+		{"id":"edge_03_to_center","fromNode":"dim03_best_practices","fromSide":"top","toNode":"center_hub_knowledge","toSide":"bottom","color":"2","label":"优化方案"},
+		{"id":"edge_04_to_center","fromNode":"dim04_guides","fromSide":"top","toNode":"center_hub_knowledge","toSide":"bottom","color":"3","label":"快速上手"},
+		{"id":"edge_05_to_center","fromNode":"dim05_code_examples","fromSide":"top","toNode":"center_hub_knowledge","toSide":"bottom","color":"2","label":"代码参考"},
+		{"id":"edge_06_to_center","fromNode":"dim06_reference","fromSide":"left","toNode":"center_hub_knowledge","toSide":"right","color":"1","label":"查询帮助"},
+		{"id":"edge_07_to_center","fromNode":"dim07_ai_guide","fromSide":"bottom","toNode":"center_hub_knowledge","toSide":"top","color":"6","label":"AI赋能"},
+		{"id":"edge_01_to_02","fromNode":"dim01_project_intro","fromSide":"bottom","toNode":"dim02_standards","toSide":"top","label":"理解后学习规范"},
+		{"id":"edge_02_to_05","fromNode":"dim02_standards","fromSide":"right","toNode":"dim05_code_examples","toSide":"left","label":"参考代码"},
+		{"id":"edge_05_to_03","fromNode":"dim05_code_examples","fromSide":"bottom","toNode":"dim03_best_practices","toSide":"right","label":"深化学习"},
+		{"id":"edge_02_to_04","fromNode":"dim02_standards","fromSide":"bottom","toNode":"dim04_guides","toSide":"left","label":"遵循规范"},
+		{"id":"edge_04_to_06","fromNode":"dim04_guides","fromSide":"right","toNode":"dim06_reference","toSide":"bottom","label":"遇到问题查FAQ"},
+		{"id":"edge_01_to_07","fromNode":"dim01_project_intro","fromSide":"right","toNode":"dim07_ai_guide","toSide":"left","label":"配置AI工具"},
+		{"id":"edge_07_to_04","fromNode":"dim07_ai_guide","fromSide":"bottom","toNode":"dim04_guides","toSide":"right","label":"AI辅助开发"}
+	]
 }
