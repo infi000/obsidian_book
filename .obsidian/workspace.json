@@ -11,17 +11,14 @@
             "id": "b68e752faa8f087e",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "临时_每日删除/projectInfo-架构图.canvas",
-                "viewState": {
-                  "x": 580,
-                  "y": 580,
-                  "zoom": -0.5179838009924104
-                }
+                "file": "每日记录/2026-02-05.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "projectInfo-架构图"
+              "icon": "lucide-file",
+              "title": "2026-02-05"
             }
           }
         ]
@@ -244,15 +241,18 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "78b74d0792f5b66b",
+  "active": "b68e752faa8f087e",
   "lastOpenFiles": [
+    "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/📋 结构梳理.md",
+    "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/🎉 项目完成总结.md",
+    "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/📋 Skill 示例总结.md",
+    "临时_每日删除/projectInfo-架构图.canvas",
     "临时_每日删除/projectInfo/SKILL.md",
     "临时_每日删除/projectInfo/dimension-02-standards.md",
     "临时_每日删除/projectInfo/dimension-04-guides.md",
     "临时_每日删除/projectInfo/dimension-05-examples.md",
     "临时_每日删除/projectInfo/dimension-07-ai.md",
     "临时_每日删除/projectInfo/dimension-06-reference.md",
-    "临时_每日删除/projectInfo-架构图.canvas",
     "临时_每日删除/projectInfo/dimension-03-practices.md",
     "临时_每日删除/projectInfo-知识库管理.base",
     "临时_每日删除/projectInfo/dimension-01-intro.md",
@@ -275,8 +275,6 @@
     "临时_每日删除/projectInfo/04_guides-guide/templates/troubleshooting.md",
     "临时_每日删除/projectInfo/04_guides-guide/templates/quick-start.md",
     "临时_每日删除/projectInfo/04_guides-guide/templates/overview.md",
-    "临时_每日删除/projectInfo/04_guides-guide/templates/new-page-template.md",
-    "临时_每日删除/projectInfo/04_guides-guide/templates/dev-environment.md",
     "临时_每日删除/projectInfo/04_guides-guide/templates",
     "临时_每日删除/projectInfo/04_guides-guide",
     "临时_每日删除/projectInfo/07_ai-development-guide/templates/WORKFLOW模板.yaml",
