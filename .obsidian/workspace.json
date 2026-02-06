@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "每日记录/2026-02-05.md",
+                "file": "每日记录/2026-02-03.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-02-05"
+              "title": "2026-02-03"
             }
           }
         ]
@@ -243,6 +243,9 @@
   },
   "active": "b68e752faa8f087e",
   "lastOpenFiles": [
+    "每日记录/2026-02-04.md",
+    "每日记录/2026-02-05.md",
+    "每日记录/2026-02-06.md",
     "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/📋 结构梳理.md",
     "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/🎉 项目完成总结.md",
     "research/Claude Code 零基础进阶：高手都在用的 Skill 2.0 架构指南（附完整步骤）/📋 Skill 示例总结.md",
@@ -272,9 +275,6 @@
     "临时_每日删除/projectInfo/02_standards-guide/templates",
     "临时_每日删除/projectInfo/02_standards-guide/GUIDE.md",
     "临时_每日删除/projectInfo/02_standards-guide",
-    "临时_每日删除/projectInfo/04_guides-guide/templates/troubleshooting.md",
-    "临时_每日删除/projectInfo/04_guides-guide/templates/quick-start.md",
-    "临时_每日删除/projectInfo/04_guides-guide/templates/overview.md",
     "临时_每日删除/projectInfo/04_guides-guide/templates",
     "临时_每日删除/projectInfo/04_guides-guide",
     "临时_每日删除/projectInfo/07_ai-development-guide/templates/WORKFLOW模板.yaml",
